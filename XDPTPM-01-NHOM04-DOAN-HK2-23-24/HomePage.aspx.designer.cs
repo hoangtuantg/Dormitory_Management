@@ -11,7 +11,7 @@ namespace XDPTPM_01_NHOM04_DOAN_HK2_23_24
 {
 
 
-    public partial class HomePage
+    public partial class _Default
     {
 
         /// <summary>

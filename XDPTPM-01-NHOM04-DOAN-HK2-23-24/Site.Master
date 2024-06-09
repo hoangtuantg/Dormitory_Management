@@ -6,64 +6,83 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - My ASP.NET Application</title>
+    <title>Ký Túc Xá Học Viện Nông Nghiệp Việt Nam</title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
 
-    <webopt:bundlereference runat="server" path="~/Content/css" />
-    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
-    <form runat="server">
-        <asp:ScriptManager runat="server">
-            <Scripts>
-                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
-                <%--Framework Scripts--%>
-                <asp:ScriptReference Name="MsAjaxBundle" />
-                <asp:ScriptReference Name="jquery" />
-                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
-                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
-                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
-                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
-                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
-                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
-                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
-                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
-                <asp:ScriptReference Name="WebFormsBundle" />
-                <%--Site Scripts--%>
-            </Scripts>
-        </asp:ScriptManager>
-
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="sm" EnablePageMethods="true" runat="server" />
+        <header>
+            <div class="banner">
+                <img src="datas/images/bannerHomePage.png" alt="ảnh bìa">
+            </div>
+            <title>Login Text</title>
+            <div class="login-text">
+                <a href="LoginPage.aspx">Đăng nhập</a>
+            </div>
             <div class="container">
-                <a class="navbar-brand" runat="server" href="~/">Application name</a>
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Toggle navigation" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/About">About</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact">Contact</a></li>
+                <a href=""></a><input type="text" placeholder="Tìm kiếm nhanh...."><button>Tìm Kiếm</button>
+                <a href="WishPage.aspx">Nguyện Vọng</a>
+                <a href="">Đăng Ký Ký Túc Xá</a>
+                <a href="">Lịch Sử Tìm Kiếm</a>
+            </div>
+            <nav class="nav" id="nav-menu">
+                <div class="nav_menu container">
+                    <ul class="nav_list">
+                        <li class="nav_item">
+                            <a class="nav_link" href="HomePage">Trang Chủ</a>
+                        </li>
+                        <li class="nav_item">
+                            <a class="nav_link" href="About">Tin Tức</a>
+                        </li>
+                        <li class="nav_item dropdown">
+                            <div class="nav_link">
+                                Các Loại Phòng                          
+                                <div class="dropdown_content">
+                                    <a class="nav_link dropdown_item" href="">Phòng 6 Người</a>
+                                    <a class="nav_link dropdown_item" href="">Phòng 8 Người</a>
+                                    <a class="nav_link dropdown_item" href="">Phòng 10 Người</a>
+                                </div>
+                            </div>                           
+                        </li>
+                        <li class="nav_item">
+                            <a class="nav_link" href="">Tra Cứu Hồ Sơ</a>
+                        </li>
+                        <li class="nav_item">
+                            <a class="nav_link" href="">Sơ Đồ Phòng</a>
+                        </li>
+                        <li class="nav_item">
+                            <a class="nav_link" href="Contact">Liên Hệ</a>
+                        </li>
                     </ul>
                 </div>
-            </div>
-        </nav>
+                <div class="nav_toggle" id="nav-toggle">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </nav>
+        </header>
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
             <hr />
-            <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
-            </footer>
         </div>
     </form>
-    <asp:PlaceHolder runat="server">
-        <%: Scripts.Render("~/Scripts/bootstrap.js") %>
-    </asp:PlaceHolder>
+    <footer>
+        <p>&copy; 2024 Ký túc xá Học viện Nông nghiệp Việt Nam. All rights reserved.</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="Scripts/main.js"></script>
 </body>
 </html>

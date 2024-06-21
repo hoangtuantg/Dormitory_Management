@@ -11,7 +11,7 @@ namespace XDPTPM_01_NHOM04_DOAN_HK2_23_24.Admin
 {
 
 
-    public partial class AdminPage
+    public partial class Admin
     {
 
         /// <summary>
@@ -31,5 +31,14 @@ namespace XDPTPM_01_NHOM04_DOAN_HK2_23_24.Admin
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+
+        /// <summary>
+        /// MyContent control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder MyContent;
     }
 }

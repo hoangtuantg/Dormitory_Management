@@ -11,7 +11,7 @@ namespace XDPTPM_01_NHOM04_DOAN_HK2_23_24.Admin
 {
 
 
-    public partial class DormitoryRoom
+    public partial class Room
     {
 
         /// <summary>
@@ -114,12 +114,12 @@ namespace XDPTPM_01_NHOM04_DOAN_HK2_23_24.Admin
         protected global::System.Web.UI.WebControls.Button SearchBookBtn;
 
         /// <summary>
-        /// BooksList control.
+        /// RoomList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView BooksList;
+        protected global::System.Web.UI.WebControls.GridView RoomList;
     }
 }

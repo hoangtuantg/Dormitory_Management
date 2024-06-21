@@ -1,0 +1,52 @@
+﻿body {
+}
+
+.room-title{
+    background-color: green;
+}
+.room-title h3{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+#left {
+    color: white;
+    height: 695px;
+    background-color: forestgreen;
+}
+
+label {
+    color: white;
+}
+
+td {
+    background-color: lightgray;
+    color: black;
+}
+
+th {
+    background-color: teal;
+    color: #EAF6F6;
+}
+
+.site-bar-child{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 5px 0;
+}
+
+.site-bar-child:hover {
+    background-color: #e1dada8a
+}
+
+.site-bar-child a label {
+    line-height: 1;
+    margin: 0;
+}
+
+.site-bar-child i{
+    line-height: 1;
+}

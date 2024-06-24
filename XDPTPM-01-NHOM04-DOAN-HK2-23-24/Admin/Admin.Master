@@ -34,7 +34,7 @@
 
                     <div class="mb-4 site-bar-child rounded">
                         <i class="fa-solid fa-building mx-2"></i>
-                        <a href="Books.aspx"><label>Phòng ký túc</label></a>
+                        <a href="Room.aspx"><label>Phòng ký túc</label></a>
                     </div>
 
                     <div class="mb-4 site-bar-child rounded">

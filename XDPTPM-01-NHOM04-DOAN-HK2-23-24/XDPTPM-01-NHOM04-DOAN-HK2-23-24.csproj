@@ -104,6 +104,8 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="Admin\Admin.Master" />
+    <Content Include="Admin\Author.aspx" />
+    <Content Include="Admin\BookType.aspx" />
     <Content Include="Admin\Room.aspx" />
     <Content Include="Admin\RoomList.aspx" />
     <Content Include="Contact.aspx" />
@@ -203,6 +205,20 @@
     </Compile>
     <Compile Include="Admin\Admin.Master.designer.cs">
       <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Author.aspx.cs">
+      <DependentUpon>Author.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Author.aspx.designer.cs">
+      <DependentUpon>Author.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\BookType.aspx.cs">
+      <DependentUpon>BookType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\BookType.aspx.designer.cs">
+      <DependentUpon>BookType.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Room.aspx.cs">
       <DependentUpon>Room.aspx</DependentUpon>

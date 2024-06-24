@@ -49,7 +49,7 @@
 
                     <div class="mb-4 site-bar-child rounded">      
                         <i class="fa-solid fa-users mx-2"></i>
-                        <a href="Seller.aspx"><label>Danh sách sinh viên</label></a>
+                        <a href="StudentList.aspx"><label>Danh sách sinh viên</label></a>
                     </div>
                     <div class="mb-4 site-bar-child rounded">
                         <i class="fa-solid fa-users-gear mx-2" height="20" width="20"></i>

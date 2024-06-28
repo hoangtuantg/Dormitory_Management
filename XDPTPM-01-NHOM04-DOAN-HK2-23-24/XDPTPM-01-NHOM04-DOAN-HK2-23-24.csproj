@@ -104,8 +104,8 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="Admin\Admin.Master" />
-    <Content Include="Admin\Author.aspx" />
-    <Content Include="Admin\BookType.aspx" />
+    <Content Include="Admin\Infrastructure.aspx" />
+    <Content Include="Admin\ApplicationList.aspx" />
     <Content Include="Admin\Room.aspx" />
     <Content Include="Admin\RoomList.aspx" />
     <Content Include="Admin\StudentList.aspx" />
@@ -207,19 +207,19 @@
     <Compile Include="Admin\Admin.Master.designer.cs">
       <DependentUpon>Admin.Master</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Author.aspx.cs">
-      <DependentUpon>Author.aspx</DependentUpon>
+    <Compile Include="Admin\Infrastructure.aspx.cs">
+      <DependentUpon>Infrastructure.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\Author.aspx.designer.cs">
-      <DependentUpon>Author.aspx</DependentUpon>
+    <Compile Include="Admin\Infrastructure.aspx.designer.cs">
+      <DependentUpon>Infrastructure.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\BookType.aspx.cs">
-      <DependentUpon>BookType.aspx</DependentUpon>
+    <Compile Include="Admin\ApplicationList.aspx.cs">
+      <DependentUpon>ApplicationList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\BookType.aspx.designer.cs">
-      <DependentUpon>BookType.aspx</DependentUpon>
+    <Compile Include="Admin\ApplicationList.aspx.designer.cs">
+      <DependentUpon>ApplicationList.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Room.aspx.cs">
       <DependentUpon>Room.aspx</DependentUpon>

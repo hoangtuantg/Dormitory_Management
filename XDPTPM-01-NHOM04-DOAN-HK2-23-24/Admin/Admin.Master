@@ -39,12 +39,12 @@
 
                     <div class="mb-4 site-bar-child rounded">
                         <i class="fa-solid fa-pen-nib mx-2"></i>
-                        <a href="Author.aspx"><label>Cơ sở vật chất</label></a>
+                        <a href="Infrastructure.aspx"><label>Cơ sở vật chất</label></a>
                     </div>
 
                     <div class="mb-4 site-bar-child rounded">      
                         <i class="fa-solid fa-layer-group mx-2"></i>
-                        <a href="BookType.aspx"><label>Danh sách đơn đăng ký</label></a>
+                        <a href="ApplicationList.aspx"><label>Danh sách đơn đăng ký</label></a>
                     </div>
 
                     <div class="mb-4 site-bar-child rounded">      

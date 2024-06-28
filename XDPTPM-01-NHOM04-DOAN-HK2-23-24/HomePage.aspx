@@ -48,6 +48,97 @@
 					</div>
 				</div>
 			</section>
+			<section class="slideshow">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="img11.jpg" style="width:70%">
+            <div class="text"></div>
+            </div>
+            
+            <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="img2.jpg" style="width:70%">
+            <div class="text"></div>
+            </div>
+            
+            <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="img3.jpg" style="width:70%">
+            <div class="text"></div>
+            </div>
+			
+			<div class="mySlides fade">
+				<div class="numbertext"></div>
+				<img src="img4.jpg" style="width:70%">
+				<div class="text"></div>
+				</div>
+
+				<div class="mySlides fade">
+					<div class="numbertext"></div>
+					<img src="img5.jpg" style="width:70%">
+					<div class="text"></div>
+					</div>
+
+					<div class="mySlides fade">
+						<div class="numbertext"></div>
+						<img src="img6.jpg" style="width:70%">
+						<div class="text"></div>
+						</div>
+
+						<div class="mySlides fade">
+							<div class="numbertext"></div>
+							<img src="img7.jpg" style="width:70%">
+							<div class="text"></div>
+							</div>
+            
+							<div class="mySlides fade">
+								<div class="numbertext"></div>
+								<img src="img8.jpg" style="width:70%">
+								<div class="text"></div>
+								</div>
+
+								<div class="mySlides fade">
+									<div class="numbertext"></div>
+									<img src="img9.jpg" style="width:70%">
+									<div class="text"></div>
+									</div>
+
+									<div class="mySlides fade">
+										<div class="numbertext"></div>
+										<img src="img10.jpg" style="width:70%">
+										<div class="text"></div>
+										</div>
+            <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span>
+			<span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+            <span class="dot" onclick="currentSlide(6)"></span>  
+			<span class="dot" onclick="currentSlide(7)"></span> 
+            <span class="dot" onclick="currentSlide(8)"></span> 
+            <span class="dot" onclick="currentSlide(9)"></span> 
+            </div>
+    </section>
+	<section class="">
+		<div class="post">
+			<img src="img10.jpg" style="width:10%">
+			  <h2>Ký Túc Xá </h2>
+			  <p>Giới Thiệu Về Ký Túc Xá Học Viện Nông Nghiệp</p>
+			  <a href="#" class="read-more">Xem thêm</a>
+			  <div class="full-content"></div>
+			</div>
+			<div class="post">
+			  <img src="img11.jpg" style="width:10%">
+			  <h2>Ký Túc Xá A2</h2>
+			  <p>Giới thiệu ký túc xá A2</p>
+			  <a href="#" class="read-more">Xem thêm</a>
+			  <div class="full-content"></div>
+			</div>
+	</section>
+	<script src="HomePage.js"></script>
         </header>
     </form>
 	<footer>

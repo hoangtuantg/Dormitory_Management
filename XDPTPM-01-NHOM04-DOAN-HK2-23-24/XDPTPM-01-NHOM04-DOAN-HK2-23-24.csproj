@@ -128,7 +128,7 @@
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="datas\images\bannerHomePage.png" />
-    <Content Include="datas\images\z5559355535363_a31b429ce7690abe5a262fea8b06ebee.jpg" />
+    <Content Include="datas\images\bannerAdminPage.jpg" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />

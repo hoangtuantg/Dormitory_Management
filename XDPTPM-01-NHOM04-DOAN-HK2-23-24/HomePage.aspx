@@ -31,7 +31,7 @@
                     </li>
                     <li><a href="">Tra Cứu Hồ Sơ</a></li>
                     <li><a href="">Sơ Đồ Phòng</a></li>
-                    <li><a href="">Liên Hệ</a></li>
+                    <li><a href="Contact.aspx">Liên Hệ</a></li>
                 </ul>
             </nav>
             <section class="slideshow">

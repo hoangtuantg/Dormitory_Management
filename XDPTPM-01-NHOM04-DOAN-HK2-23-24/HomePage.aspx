@@ -10,7 +10,7 @@
 <body>
     <form id="form1" runat="server">
         <asp:ScriptManager ID="sm" EnablePageMethods="true" runat="server" />
-        <header class="container">
+        <header class="">
             <img src="datas/images/bannerHomePage.png" alt="ảnh bìa">
             <title>Login Text</title>
             <div class="login-text">
@@ -36,64 +36,63 @@
             </nav>
             <section class="slideshow">
                 <div class="slideshow-container">
-
                     <div class="mySlides fade">
                         <div class="numbertext"></div>
-                        <img src="./datas/images/img11.jpg" style="width: 70%">
+                        <img src="./datas/images/img11.jpg" style="width: 100%; height: auto; object-fit: cover;">
                         <div class="text"></div>
                     </div>
 
                     <div class="mySlides fade">
                         <div class="numbertext"></div>
-                        <img src="./datas/images/img2.jpg" style="width: 70%">
+                        <img src="./datas/images/img2.jpg" style="width: 100%; height: auto">
                         <div class="text"></div>
                     </div>
 
                     <div class="mySlides fade">
                         <div class="numbertext"></div>
-                        <img src="./datas/images/img3.jpg" style="width: 70%">
+                        <img src="./datas/images/img3.jpg" style="width: 100%; height: auto">
                         <div class="text"></div>
                     </div>
 
                     <div class="mySlides fade">
                         <div class="numbertext"></div>
-                        <img src="./datas/images/img4.jpg" style="width: 70%">
+                        <img src="./datas/images/img4.jpg" style="width: 100%; height: auto">
                         <div class="text"></div>
                     </div>
 
                     <div class="mySlides fade">
                         <div class="numbertext"></div>
-                        <img src="./datas/images/img5.jpg" style="width: 70%">
+                        <img src="./datas/images/img5.jpg" style="width: 100%; height: auto">
                         <div class="text"></div>
                     </div>
 
                     <div class="mySlides fade">
                         <div class="numbertext"></div>
-                        <img src="./datas/images/img6.jpg" style="width: 70%">
+                        <img src="./datas/images/img6.jpg" style="width: 100%; height: auto">
                         <div class="text"></div>
                     </div>
 
                     <div class="mySlides fade">
                         <div class="numbertext"></div>
-                        <img src="./datas/images/img7.jpg" style="width: 70%">
+                        <img src="./datas/images/img7.jpg" style="width: 100%; height: auto">
                         <div class="text"></div>
                     </div>
 
                     <div class="mySlides fade">
                         <div class="numbertext"></div>
-                        <img src="./datas/images/img8.jpg" style="width: 70%">
+                        <img src="./datas/images/img8.jpg" style="width: 100%; height: auto">
                         <div class="text"></div>
                     </div>
 
                     <div class="mySlides fade">
                         <div class="numbertext"></div>
-                        <img src="./datas/images/img9.jpg" style="width: 70%">
+                        <img src="./datas/images/img9.jpg" style="width: 100%; height: auto">
                         <div class="text"></div>
                     </div>
 
                     <div class="mySlides fade">
                         <div class="numbertext"></div>
-                        <img src="./datas/images/img10.jpg" style="width: 70%">
+                        <img src="./datas/images/img10.jpg" style="width: 100%; height: auto">
                         <div class="text"></div>
                     </div>
                     <div style="text-align: center">
@@ -107,6 +106,7 @@
                         <span class="dot" onclick="currentSlide(8)"></span>
                         <span class="dot" onclick="currentSlide(9)"></span>
                     </div>
+                </div>
             </section>
             <script src="Scripts/WebForms/HomePage.js"></script>
         </header>

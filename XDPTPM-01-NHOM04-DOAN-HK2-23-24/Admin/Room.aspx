@@ -3,9 +3,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MyContent" runat="server">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
-            <div class="col mt-4 mb-4 room-title rounded">
+            <div class="col mt-4 mb-4 title rounded">
                 <h3 class="text-center">Quản lý Phòng Ký Túc Xá</h3>
             </div>
         </div>
@@ -55,13 +55,13 @@
                     <asp:Label runat="server" ID="ErrMsg" class="text-danger"></asp:Label>
                 </div>
             </div>
-                        <div class="col-md-8">
+            <div class="col-md-8">
                 <div class="mb-3">
                     <label for="txtSearchBook" class="form-label text-success">Tìm kiếm sách</label>
                     <input type="text" placeholder="Tìm kiếm phòng ..." autocomplete="off" class="form-control" runat="server" id="txtSearchBook" />
                 </div>
 
-            <asp:Button Text="Tìm kiếm" runat="server" ID="SearchBookBtn"  class="btn-info btn-block btn" width="100"/> </br>
+                <asp:Button Text="Tìm kiếm" runat="server" ID="SearchBookBtn"  class="btn-outline-info btn-block btn" width="100"/> </br>
 
                 <asp:GridView ID="RoomList" runat="server" class="table table-bordered" AutoGenerateSelectButton="True"  AllowPaging="True" PageSize="5">
                     <SelectedRowStyle BackColor="#C5BBAF" Font-Bold="true" ForeColor="#333333"/>

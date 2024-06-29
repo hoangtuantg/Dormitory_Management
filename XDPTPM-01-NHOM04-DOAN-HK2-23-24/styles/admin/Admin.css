@@ -1,13 +1,12 @@
 ﻿body {
 }
 
-.room-title{
+.title{
     background-color: green;
 }
-.room-title h3{
+.title h3{
     color: white;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 22px;
     margin: 10px 0;
 }
 
@@ -31,18 +30,23 @@ th {
     color: #EAF6F6;
 }
 
-.site-bar-child{
+.site-bar-child {
     display: flex;
     align-items: center;
     justify-content: start;
-    padding: 5px 0;
+    padding: 10px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
 }
 
 .site-bar-child:hover {
-    background-color: #e1dada8a
+    background-color: #e1dada8a;
+    text-decoration: none;
+    color: white;
 }
 
-.site-bar-child a label {
+.site-bar-child label {
     line-height: 1;
     margin: 0;
 }
@@ -53,4 +57,26 @@ th {
 
 .bg-forestgreen {
     background-color: forestgreen;
+}
+
+.site-bar-child label {
+    line-height: 1;
+    margin: 0;
+}
+
+.active a label {
+    color: green;
+}
+
+.active {
+    background-color: white;
+    color: green;
+}
+
+.active i {
+    color: green;
+}
+
+.active label {
+    color: green;
 }

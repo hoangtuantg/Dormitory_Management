@@ -4,7 +4,12 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MyContent" runat="server">
     <div class="container">
-        <h3 class="text-center mt-4 mb-4">Danh sách sinh viên</h3>
+        <div class="row">
+            <div class="col mt-4 mb-4 title rounded">
+                <h3 class="text-center">Danh sách sinh viên</h3>
+            </div>
+        </div>
+
         <div class="input-group mb-3">
             <input type="text" class="form-control" placeholder="Nhập mã sinh viên" aria-label="StudentID" aria-describedby="button-addon2">
             <div class="input-group-append">
@@ -50,8 +55,8 @@
                     </tbody>
                 </table>
             </div>
-            <div class="col-lg-6">
-                <div class="container-fluid pb-3 pt-2 bg-forestgreen">
+            <div class="col-lg-6 rounded">
+                <div class="container-fluid pb-3 pt-2 bg-forestgreen rounded">
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="name">Họ tên</label>

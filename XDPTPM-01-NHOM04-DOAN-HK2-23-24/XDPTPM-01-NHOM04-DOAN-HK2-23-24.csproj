@@ -107,7 +107,9 @@
     <Content Include="Admin\Infrastructure.aspx" />
     <Content Include="Admin\ApplicationList.aspx" />
     <Content Include="Admin\Room.aspx" />
+    <Content Include="Admin\StaffList.aspx" />
     <Content Include="Admin\StudentList.aspx" />
+    <Content Include="Admin\Users.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -229,12 +231,26 @@
     <Compile Include="Admin\Room.aspx.designer.cs">
       <DependentUpon>Room.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\StaffList.aspx.cs">
+      <DependentUpon>StaffList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\StaffList.aspx.designer.cs">
+      <DependentUpon>StaffList.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\StudentList.aspx.cs">
       <DependentUpon>StudentList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admin\StudentList.aspx.designer.cs">
       <DependentUpon>StudentList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Users.aspx.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Users.aspx.designer.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">

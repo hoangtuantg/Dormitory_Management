@@ -129,16 +129,6 @@
     <Content Include="Content\Site.css" />
     <Content Include="datas\images\bannerHomePage.png" />
     <Content Include="datas\images\z5559355535363_a31b429ce7690abe5a262fea8b06ebee.jpg" />
-    <Content Include="datas\images\ảnh10.jpg" />
-    <Content Include="datas\images\ảnh11.jpg" />
-    <Content Include="datas\images\ảnh2.jpg" />
-    <Content Include="datas\images\ảnh3.jpg" />
-    <Content Include="datas\images\ảnh4.jpg" />
-    <Content Include="datas\images\ảnh5.jpg" />
-    <Content Include="datas\images\ảnh6.jpg" />
-    <Content Include="datas\images\ảnh7.jpg" />
-    <Content Include="datas\images\ảnh8.jpg" />
-    <Content Include="datas\images\ảnh9.jpg" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />

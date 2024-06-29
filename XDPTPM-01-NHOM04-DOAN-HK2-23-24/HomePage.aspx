@@ -53,61 +53,61 @@
 
             <div class="mySlides fade">
             <div class="numbertext"></div>
-            <img src="img11.jpg" style="width:70%">
+            <img src="./datas/images/img11.jpg" style="width:70%">
             <div class="text"></div>
             </div>
             
             <div class="mySlides fade">
             <div class="numbertext"></div>
-            <img src="img2.jpg" style="width:70%">
+            <img src="./datas/images/img2.jpg" style="width:70%">
             <div class="text"></div>
             </div>
             
             <div class="mySlides fade">
             <div class="numbertext"></div>
-            <img src="img3.jpg" style="width:70%">
+            <img src="./datas/images/img3.jpg" style="width:70%">
             <div class="text"></div>
             </div>
 			
 			<div class="mySlides fade">
 				<div class="numbertext"></div>
-				<img src="img4.jpg" style="width:70%">
+				<img src="./datas/images/img4.jpg" style="width:70%">
 				<div class="text"></div>
 				</div>
 
 				<div class="mySlides fade">
 					<div class="numbertext"></div>
-					<img src="img5.jpg" style="width:70%">
+					<img src="./datas/images/img5.jpg" style="width:70%">
 					<div class="text"></div>
 					</div>
 
 					<div class="mySlides fade">
 						<div class="numbertext"></div>
-						<img src="img6.jpg" style="width:70%">
+						<img src="./datas/images/img6.jpg" style="width:70%">
 						<div class="text"></div>
 						</div>
 
 						<div class="mySlides fade">
 							<div class="numbertext"></div>
-							<img src="img7.jpg" style="width:70%">
+							<img src="./datas/images/img7.jpg" style="width:70%">
 							<div class="text"></div>
 							</div>
             
 							<div class="mySlides fade">
 								<div class="numbertext"></div>
-								<img src="img8.jpg" style="width:70%">
+								<img src="./datas/images/img8.jpg" style="width:70%">
 								<div class="text"></div>
 								</div>
 
 								<div class="mySlides fade">
 									<div class="numbertext"></div>
-									<img src="img9.jpg" style="width:70%">
+									<img src="./datas/images/img9.jpg" style="width:70%">
 									<div class="text"></div>
 									</div>
 
 									<div class="mySlides fade">
 										<div class="numbertext"></div>
-										<img src="img10.jpg" style="width:70%">
+										<img src="./datas/images/img10.jpg" style="width:70%">
 										<div class="text"></div>
 										</div>
             <div style="text-align:center">
@@ -124,21 +124,21 @@
     </section>
 	<section class="">
 		<div class="post">
-			<img src="img10.jpg" style="width:10%">
+			<img src="./datas/images/img10.jpg" style="width:10%">
 			  <h2>Ký Túc Xá </h2>
 			  <p>Giới Thiệu Về Ký Túc Xá Học Viện Nông Nghiệp</p>
 			  <a href="#" class="read-more">Xem thêm</a>
 			  <div class="full-content"></div>
 			</div>
 			<div class="post">
-			  <img src="img11.jpg" style="width:10%">
+			  <img src="./datas/images/img11.jpg" style="width:10%">
 			  <h2>Ký Túc Xá A2</h2>
 			  <p>Giới thiệu ký túc xá A2</p>
 			  <a href="#" class="read-more">Xem thêm</a>
 			  <div class="full-content"></div>
 			</div>
 	</section>
-	<script src="HomePage.js"></script>
+	<script src="Scripts/WebForms/HomePage.js"></script>
         </header>
     </form>
 	<footer>

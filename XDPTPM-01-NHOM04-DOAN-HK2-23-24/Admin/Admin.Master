@@ -21,7 +21,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-2" id="left">
-                <div class="p-2" id="site-bar-parent">
+                <div class="p-7" id="site-bar-parent">
                     <div style="height:180px">
                         <br />
                         <img src="../datas/images/bannerAdminPage.jpg" alt="Alternate Text"  width="100%" style="border-radius:20px"/>

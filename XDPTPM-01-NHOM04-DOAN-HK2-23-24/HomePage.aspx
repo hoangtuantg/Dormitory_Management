@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Home.Master" AutoEventWireup="true" CodeBehind="HomePage.aspx.cs" Inherits="XDPTPM_01_NHOM04_DOAN_HK2_23_24.HomePage" %>
+﻿<%@ Page Title="Ký túc xá VNUA" Language="C#" MasterPageFile="~/Home.Master" AutoEventWireup="true" CodeBehind="HomePage.aspx.cs" Inherits="XDPTPM_01_NHOM04_DOAN_HK2_23_24.HomePage" %>
 
 <asp:Content ID="dfd" ContentPlaceHolderID="MainContent" runat="server">
     <asp:ScriptManager ID="sm" EnablePageMethods="true" runat="server" />

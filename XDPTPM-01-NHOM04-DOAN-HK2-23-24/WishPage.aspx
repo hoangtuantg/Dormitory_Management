@@ -1,16 +1,7 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WishPage.aspx.cs" Inherits="XDPTPM_01_NHOM04_DOAN_HK2_23_24.WishPage" %>
+﻿<%@ Page Title="Đăng kí nguyện vọng" Language="C#" MasterPageFile="~/Home.Master" AutoEventWireup="true" CodeBehind="WishPage.aspx.cs" Inherits="XDPTPM_01_NHOM04_DOAN_HK2_23_24.WishPage" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Đăng Ký Nguyện Vọng Ở Ký Túc Xá</title>
+<asp:Content ID="NguyenVong" ContentPlaceHolderID="MainContent" runat="server">
     <link href="styles/WishPage.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
-    <form id="form1" runat="server">
         <div class="container">
             <form action="submit.php" method="POST">
                 <h2>Đăng Ký Nguyện Vọng Ở Ký Túc Xá</h2>
@@ -53,6 +44,6 @@
                 </div>
             </form>
         </div>
-    </form>
-</body>
-</html>
+</asp:Content>
+
+    

@@ -5,32 +5,31 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Ký Túc Xá Học Viện Nông Nghiệp Việt Nam</title>
-    <link href="styles/HomePage.css" rel="stylesheet" type="text/css" />
+    <link href="styles/HomePage.css?v=<%= DateTime.Now.Ticks %>" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <form id="form1" runat="server">
         <asp:ScriptManager ID="sm" EnablePageMethods="true" runat="server" />
         <header class="">
-            <img src="datas/images/bannerHomePage.png" alt="ảnh bìa">
-            <title>Login Text</title>
+            <img src="datas/images/bannerHomePage.png" alt="ảnh bìa"/>
             <div class="login-text">
                 <a href="LoginPage.aspx">Đăng nhập</a>
             </div>
             <nav class="menu-bar menu-bar-container">
                 <ul>
-                    <li><a href="">Trang Chủ</a></li>
+                    <li><a href="/">Trang Chủ</a></li>
                     <li><a href="WishPage.aspx">Nguyện vọng</a></li>
-                    <li><a href="">Các Loại Phòng</a>
+                    <li><a href="/">Các Loại Phòng</a>
                         <div class="submenu">
                             <ul>
-                                <li><a href="">Phòng 6 Người</a></li>
-                                <li><a href="">Phòng 8 Người</a></li>
-                                <li><a href="">Phòng 10 Người</a></li>
+                                <li><a href="/">Phòng 6 Người</a></li>
+                                <li><a href="/">Phòng 8 Người</a></li>
+                                <li><a href="/">Phòng 10 Người</a></li>
                             </ul>
                         </div>
                     </li>
-                    <li><a href="">Tra Cứu Hồ Sơ</a></li>
-                    <li><a href="">Sơ Đồ Phòng</a></li>
+                    <li><a href="/">Tra Cứu Hồ Sơ</a></li>
+                    <li><a href="/">Sơ Đồ Phòng</a></li>
                     <li><a href="Contact.aspx">Liên Hệ</a></li>
                 </ul>
             </nav>
@@ -38,61 +37,61 @@
                 <div class="slideshow-container">
                     <div class="mySlides fade">
                         <div class="numbertext"></div>
-                        <img src="./datas/images/img11.jpg" style="width: 100%; height: auto; object-fit: cover;">
+                        <img src="./datas/images/img11.jpg"/>
                         <div class="text"></div>
                     </div>
 
                     <div class="mySlides fade">
                         <div class="numbertext"></div>
-                        <img src="./datas/images/img2.jpg" style="width: 100%; height: auto">
+                        <img src="./datas/images/img2.jpg"/>
                         <div class="text"></div>
                     </div>
 
                     <div class="mySlides fade">
                         <div class="numbertext"></div>
-                        <img src="./datas/images/img3.jpg" style="width: 100%; height: auto">
+                        <img src="./datas/images/img3.jpg"/>
                         <div class="text"></div>
                     </div>
 
                     <div class="mySlides fade">
                         <div class="numbertext"></div>
-                        <img src="./datas/images/img4.jpg" style="width: 100%; height: auto">
+                        <img src="./datas/images/img4.jpg"/>
                         <div class="text"></div>
                     </div>
 
                     <div class="mySlides fade">
                         <div class="numbertext"></div>
-                        <img src="./datas/images/img5.jpg" style="width: 100%; height: auto">
+                        <img src="./datas/images/img5.jpg"/>
                         <div class="text"></div>
                     </div>
 
                     <div class="mySlides fade">
                         <div class="numbertext"></div>
-                        <img src="./datas/images/img6.jpg" style="width: 100%; height: auto">
+                        <img src="./datas/images/img6.jpg"/>
                         <div class="text"></div>
                     </div>
 
                     <div class="mySlides fade">
                         <div class="numbertext"></div>
-                        <img src="./datas/images/img7.jpg" style="width: 100%; height: auto">
+                        <img src="./datas/images/img7.jpg"/>
                         <div class="text"></div>
                     </div>
 
                     <div class="mySlides fade">
                         <div class="numbertext"></div>
-                        <img src="./datas/images/img8.jpg" style="width: 100%; height: auto">
+                        <img src="./datas/images/img8.jpg"/>
                         <div class="text"></div>
                     </div>
 
                     <div class="mySlides fade">
                         <div class="numbertext"></div>
-                        <img src="./datas/images/img9.jpg" style="width: 100%; height: auto">
+                        <img src="./datas/images/img9.jpg"/>
                         <div class="text"></div>
                     </div>
 
                     <div class="mySlides fade">
                         <div class="numbertext"></div>
-                        <img src="./datas/images/img10.jpg" style="width: 100%; height: auto">
+                        <img src="./datas/images/img10.jpg"/>
                         <div class="text"></div>
                     </div>
                     <div style="text-align: center">

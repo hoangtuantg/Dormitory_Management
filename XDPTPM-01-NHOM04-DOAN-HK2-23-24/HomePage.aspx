@@ -20,14 +20,6 @@
                     <li><a href="HomePage.aspx">Trang Chủ</a></li>
                     <li><a href="WishPage.aspx">Nguyện vọng</a></li>
                     <li><a href="/">Các Loại Phòng</a>
-                        <div class="submenu">
-                            <ul>
-                                <li><a href="/">Phòng 6 Người</a></li>
-                                <li><a href="/">Phòng 8 Người</a></li>
-                                <li><a href="/">Phòng 10 Người</a></li>
-                            </ul>
-                        </div>
-                    </li>
                     <li><a href="/">Tra Cứu Hồ Sơ</a></li>
                     <li><a href="/">Sơ Đồ Phòng</a></li>
                     <li><a href="Contact.aspx">Liên Hệ</a></li>

@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Home.master.cs" Inherits="XDPTPM_01_NHOM04_DOAN_HK2_23_24.Home" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="styles/HomePage.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+        <img src="datas/images/bannerHomePage.png" alt="ảnh bìa" style="text-align:center">
+        <div class="login-text">
+            <a href="LoginPage.aspx">Đăng nhập</a>
+        </div>
+        <nav class="menu-bar menu-bar-container">
+            <ul>
+                <li><a href="HomePage.aspx">Trang Chủ</a></li>
+                <li><a href="WishPage.aspx">Nguyện vọng</a></li>
+                <li><a href="/">Các Loại Phòng</a>
+                </li>
+                <li><a href="/">Tra Cứu Hồ Sơ</a></li>
+                <li><a href="/">Sơ Đồ Phòng</a></li>
+                <li><a href="Contact.aspx">Liên Hệ</a></li>
+            </ul>
+        </nav>
+        </header>
+        <div>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+ 
+
+            </asp:ContentPlaceHolder>
+        </div>
+        <footer>
+            <p>&copy; 2024 Ký túc xá Học viện Nông nghiệp Việt Nam. All rights reserved.</p>
+        </footer>
+    </form>
+</body>
+</html>

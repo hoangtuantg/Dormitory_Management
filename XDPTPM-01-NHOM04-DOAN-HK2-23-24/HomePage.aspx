@@ -17,7 +17,7 @@
             </div>
             <nav class="menu-bar menu-bar-container">
                 <ul>
-                    <li><a href="/">Trang Chủ</a></li>
+                    <li><a href="HomePage.aspx">Trang Chủ</a></li>
                     <li><a href="WishPage.aspx">Nguyện vọng</a></li>
                     <li><a href="/">Các Loại Phòng</a>
                         <div class="submenu">

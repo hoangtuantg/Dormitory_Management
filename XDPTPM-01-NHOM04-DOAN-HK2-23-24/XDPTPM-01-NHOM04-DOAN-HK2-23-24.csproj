@@ -165,6 +165,7 @@
     <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include="Scripts\WebForms\HomePage.js" />
     <Content Include="styles\admin\Admin.css" />
+    <Content Include="styles\Contact.css" />
     <Content Include="styles\WishPage.css" />
     <Content Include="WishPage.aspx" />
     <Content Include="Home.Master" />

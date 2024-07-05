@@ -15,49 +15,49 @@ namespace XDPTPM_01_NHOM04_DOAN_HK2_23_24.Admin
     {
 
         /// <summary>
-        /// BName control.
+        /// ScriptManager1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText BName;
+        protected global::System.Web.UI.ScriptManager ScriptManager1;
 
         /// <summary>
-        /// BAuthor control.
+        /// UpdatePanel1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText BAuthor;
+        protected global::System.Web.UI.UpdatePanel UpdatePanel1;
 
         /// <summary>
-        /// BType control.
+        /// RoomName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText BType;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText RoomName;
 
         /// <summary>
-        /// BPrice control.
+        /// MaxStudent control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText BPrice;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText MaxStudent;
 
         /// <summary>
-        /// BQuantity control.
+        /// Building control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText BQuantity;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText Building;
 
         /// <summary>
         /// UpdateBtn control.

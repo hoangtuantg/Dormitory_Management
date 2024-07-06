@@ -80,7 +80,7 @@
                         <asp:BoundField DataField="StudentCode" HeaderText="MSV" />
                         <asp:BoundField DataField="numIdentify" HeaderText="CCCD"/>
                         <asp:BoundField DataField="dateOfBirth" HeaderText="Ngày sinh" DataFormatString="{0:dd/MM/yyyy}" />
-                        <asp:BoundField DataField="roomId" HeaderText="Phòng" />
+                        <asp:BoundField DataField="roomName" HeaderText="Phòng" />
                     </Columns>
                 </asp:GridView>
             </div>

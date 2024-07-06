@@ -46,16 +46,16 @@
 
                 <div class="row">
                     <div class="col d-grid">
-                        <asp:Button Text="Thêm" runat="server" id="AddBtn" width="65px"  class="btn-outline-success btn-block btn" />
+                        <asp:Button Text="Thêm" runat="server" id="AddBtn" width="65px"  class="btn-outline-success btn-block btn" OnClick="AddBtn_Click" />
 
                     </div>
 
                     <div class="col d-grid">
-                        <asp:Button Text="Sửa" runat="server" id="UpdateBtn" class="btn-outline-primary btn-block btn" />
+                        <asp:Button Text="Sửa" runat="server" id="UpdateBtn" class="btn-outline-primary btn-block btn" OnClick="UpdateBtn_Click" />
                     </div>
 
                     <div class="col d-grid">
-                        <asp:Button Text="Xóa" runat="server" id="DeleteBtn" class="btn-outline-danger btn-block btn" />
+                        <asp:Button Text="Xóa" runat="server" id="DeleteBtn" class="btn-outline-danger btn-block btn" OnClick="DeleteBtn_Click" />
 
                     </div>
 

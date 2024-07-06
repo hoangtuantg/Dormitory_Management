@@ -19,21 +19,37 @@ namespace XDPTPM_01_NHOM04_DOAN_HK2_23_24.Admin
         {
             if (!IsPostBack)
             {
-                BindGridView();
+                BindGridView("");
             }
         }
 
-        private void BindGridView()
+        private void BindGridView(string name)
         {
             helper.openConnection();
             DataSet dataSet = new DataSet();
-            SqlDataAdapter adapter = new SqlDataAdapter(helper.CreateCommand(
-                "select room_tbl.roomId, room_tbl.roomName, room_tbl.createAt, room_tbl.maxStudent, building_tbl.buildingName, COUNT(student_tbl.roomId) as currentStudent " +
-                "from room_tbl " +
-                "left join student_tbl on room_tbl.roomId = student_tbl.roomId " +
-                "left join building_tbl on room_tbl.buildingId = building_tbl.buildingId " +
-                "group by room_tbl.roomId, room_tbl.roomName, room_tbl.createAt, room_tbl.maxStudent, building_tbl.buildingName "
-            ));
+            SqlCommand cmd;
+            if(name.Trim() == "")
+            {
+                cmd = helper.CreateCommand(
+                    "select room_tbl.roomId, room_tbl.roomName, room_tbl.createAt, room_tbl.maxStudent, building_tbl.buildingName, COUNT(student_tbl.roomId) as currentStudent " +
+                    "from room_tbl " +
+                    "left join student_tbl on room_tbl.roomId = student_tbl.roomId " +
+                    "left join building_tbl on room_tbl.buildingId = building_tbl.buildingId " +
+                    "group by room_tbl.roomId, room_tbl.roomName, room_tbl.createAt, room_tbl.maxStudent, building_tbl.buildingName "
+                );
+            } else
+            {
+                cmd = helper.CreateCommand(
+                    "select room_tbl.roomId, room_tbl.roomName, room_tbl.createAt, room_tbl.maxStudent, building_tbl.buildingName, COUNT(student_tbl.roomId) as currentStudent " +
+                    "from room_tbl " +
+                    "left join student_tbl on room_tbl.roomId = student_tbl.roomId " +
+                    "left join building_tbl on room_tbl.buildingId = building_tbl.buildingId " +
+                    "group by room_tbl.roomId, room_tbl.roomName, room_tbl.createAt, room_tbl.maxStudent, building_tbl.buildingName " +
+                    "where room_tbl.roomName like '" + name + "%'"
+                );
+            }
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+
             adapter.Fill(dataSet);
             RoomList.DataSource = dataSet;
             RoomList.DataBind();
@@ -72,6 +88,8 @@ namespace XDPTPM_01_NHOM04_DOAN_HK2_23_24.Admin
                 RoomName.Value = roomName;
                 MaxStudent.Value = maxStudent;
                 Building.Value = building;
+
+                AddBtn.Enabled = false;
             }
 
         }
@@ -79,7 +97,12 @@ namespace XDPTPM_01_NHOM04_DOAN_HK2_23_24.Admin
         protected void RoomList_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
             RoomList.PageIndex = e.NewPageIndex;
-            BindGridView();
+            BindGridView("");
+        }
+
+        protected void UpdateBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

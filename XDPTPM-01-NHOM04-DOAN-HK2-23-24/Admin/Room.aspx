@@ -29,10 +29,23 @@
                             <label for="" class="form-label text-success">Tòa</label>
                             <input type="text" placeholder="Tòa ..." autocomplete="off" class="form-control" runat="server" id="Building" />
                         </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label text-success">Tòa</label>
+                            <asp:DropDownList  runat="server" CssClass="form-control" id="gender">
+                                <asp:ListItem>A2</asp:ListItem>
+                                <asp:ListItem>B3</asp:ListItem>
+                                <asp:ListItem>B4</asp:ListItem>
+                                <asp:ListItem>C1</asp:ListItem>
+                                <asp:ListItem>C2</asp:ListItem>
+                                <asp:ListItem>C3</asp:ListItem>
+                                <asp:ListItem>C4</asp:ListItem>
+                                <asp:ListItem>C5</asp:ListItem>
+                            </asp:DropDownList>
+                        </div>
 
                         <div class="row">
                             <div class="col d-grid">
-                                <asp:Button Text="Sửa" runat="server" ID="UpdateBtn" class="btn-outline-primary btn-block btn" />
+                                <asp:Button Text="Sửa" runat="server" ID="UpdateBtn" class="btn-outline-primary btn-block btn" OnClick="UpdateBtn_Click"/>
                             </div>
 
                             <div class="col d-grid">
@@ -56,8 +69,7 @@
 
                         <asp:Button Text="Tìm kiếm" runat="server" ID="SearchBookBtn" class="btn-outline-info btn-block btn" Width="100" />
                         <br>
-
-                        <asp:GridView ID="RoomList" runat="server" class="table table-bordered" AutoGenerateSelectButton="False" AllowPaging="True" PageSize="1" AutoGenerateColumns="false" OnSelectedIndexChanged="RoomList_SelectedIndexChanged" OnPageIndexChanging="RoomList_PageIndexChanging">
+                        <asp:GridView ID="RoomList" runat="server" class="table table-bordered" AutoGenerateSelectButton="False" AllowPaging="True" PageSize="5" AutoGenerateColumns="false" OnSelectedIndexChanged="RoomList_SelectedIndexChanged" OnPageIndexChanging="RoomList_PageIndexChanging">
                             <SelectedRowStyle BackColor="#C5BBAF" Font-Bold="true" ForeColor="#333333" />
                             <Columns>
                                 <asp:BoundField HeaderText="Mã phòng" DataField="roomId" HeaderStyle-Height="25" ItemStyle-HorizontalAlign="left" ItemStyle-Width="5%" ItemStyle-Font-Size="Smaller"></asp:BoundField>

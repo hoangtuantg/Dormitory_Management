@@ -15,6 +15,10 @@
             <ContentTemplate>
                 <div class="row">
                     <div class="col-md-4">
+                        <div class="mb-4">
+                            <asp:Label ID="lblResult" ForeColor="YellowGreen" runat="server"></asp:Label>
+                        </div>
+                        
                         <div class="mb-3">
                             <label for="" class="form-label text-success">Tên phòng</label>
                             <input type="text" placeholder="Phòng ..." autocomplete="off" class="form-control" runat="server" id="RoomName" />
@@ -22,39 +26,22 @@
 
                         <div class="mb-3">
                             <label for="" class="form-label text-success">Sinh viên tối đa</label>
-                            <input type="text" placeholder="Quản lý ..." autocomplete="off" class="form-control" runat="server" id="MaxStudent" />
+                            <input type="number" min="0" placeholder="Số lượng sinh viên ở tối đa ..." autocomplete="off" class="form-control" runat="server" id="MaxStudent" />
                         </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label text-success">Tòa</label>
+                            <asp:DropDownList  runat="server" CssClass="form-control" id="RoomBuilding">
 
-                        <div class="mb-3">
-                            <label for="" class="form-label text-success">Tòa</label>
-                            <input type="text" placeholder="Tòa ..." autocomplete="off" class="form-control" runat="server" id="Building" />
-                        </div>
-                        <div class="mb-3">
-                            <label for="" class="form-label text-success">Tòa</label>
-                            <asp:DropDownList  runat="server" CssClass="form-control" id="gender">
-                                <asp:ListItem>A2</asp:ListItem>
-                                <asp:ListItem>B3</asp:ListItem>
-                                <asp:ListItem>B4</asp:ListItem>
-                                <asp:ListItem>C1</asp:ListItem>
-                                <asp:ListItem>C2</asp:ListItem>
-                                <asp:ListItem>C3</asp:ListItem>
-                                <asp:ListItem>C4</asp:ListItem>
-                                <asp:ListItem>C5</asp:ListItem>
                             </asp:DropDownList>
                         </div>
 
                         <div class="row">
                             <div class="col d-grid">
-                                <asp:Button Text="Sửa" runat="server" ID="UpdateBtn" class="btn-outline-primary btn-block btn" OnClick="UpdateBtn_Click"/>
+                                <asp:Button Text="Lưu" runat="server" ID="UpdateBtn" class="btn-outline-primary btn-block btn" OnClick="UpdateBtn_Click"/>
                             </div>
 
                             <div class="col d-grid">
-                                <asp:Button Text="Thêm mới" runat="server" ID="AddBtn" class="btn-outline-success btn-block btn" />
-
-                            </div>
-
-                            <div class="col d-grid">
-                                <asp:Button Text="Xóa" runat="server" ID="DeleteBtn" class="btn-outline-danger btn-block btn" />
+                                <asp:Button Text="Thêm mới" runat="server" ID="AddBtn" class="btn-outline-success btn-block btn" OnClick="AddBtn_Click"/>
 
                             </div>
 
@@ -64,23 +51,25 @@
                     <div class="col-md-8">
                         <div class="mb-3">
                             <label for="txtSearchBook" class="form-label text-success">Tìm kiếm phòng</label>
-                            <input type="text" placeholder="Nhập tên phòng ..." autocomplete="off" class="form-control" runat="server" id="txtSearchBook" />
+                            <input type="text" placeholder="Nhập tên phòng ..." autocomplete="off" class="form-control" runat="server" id="txtSearchRoom" />
                         </div>
-
-                        <asp:Button Text="Tìm kiếm" runat="server" ID="SearchBookBtn" class="btn-outline-info btn-block btn" Width="100" />
+                        <div class="d-flex justify-content-between">
+                            <asp:Button Text="Tìm kiếm" runat="server" ID="SearchBookBtn" class="btn-outline-info btn-block btn" Width="100" OnClick="SearchRoomBtn_Click"/>
+                            <asp:Button Text="Hủy tìm" runat="server" ID="ExitBookBtn" class="btn-outline-info btn-block btn" Width="100" OnClick="ExitRoomBtn_Click"/>
+                        </div>
                         <br>
-                        <asp:GridView ID="RoomList" runat="server" class="table table-bordered" AutoGenerateSelectButton="False" AllowPaging="True" PageSize="5" AutoGenerateColumns="false" OnSelectedIndexChanged="RoomList_SelectedIndexChanged" OnPageIndexChanging="RoomList_PageIndexChanging">
+                        <asp:GridView ID="RoomList" runat="server" class="table table-bordered" AutoGenerateSelectButton="False" AllowPaging="True" PageSize="5" AutoGenerateColumns="false" OnSelectedIndexChanged="RoomList_SelectedIndexChanged" OnPageIndexChanging="RoomList_PageIndexChanging" >
                             <SelectedRowStyle BackColor="#C5BBAF" Font-Bold="true" ForeColor="#333333" />
                             <Columns>
-                                <asp:BoundField HeaderText="Mã phòng" DataField="roomId" HeaderStyle-Height="25" ItemStyle-HorizontalAlign="left" ItemStyle-Width="5%" ItemStyle-Font-Size="Smaller"></asp:BoundField>
+                                <asp:BoundField HeaderText="Mã phòng" ReadOnly="true" DataField="roomId" HeaderStyle-Height="25" ItemStyle-HorizontalAlign="center" SortExpression="roomId" ItemStyle-Width="5%" ItemStyle-Font-Size="Smaller"></asp:BoundField>
                                 <asp:BoundField HeaderText="Tên phòng" DataField="roomName" HeaderStyle-Height="25" ItemStyle-HorizontalAlign="center" SortExpression="roomId"></asp:BoundField>
-                                <asp:BoundField HeaderText="Ngày thêm" DataField="createAt" HeaderStyle-Height="25" ItemStyle-HorizontalAlign="center" SortExpression="roomId" DataFormatString="{0:dd/MM/yyyy}"></asp:BoundField>
+                                <asp:BoundField HeaderText="Ngày thêm" ReadOnly="true" DataField="createAt" HeaderStyle-Height="25" ItemStyle-HorizontalAlign="center" SortExpression="roomId" DataFormatString="{0:dd/MM/yyyy}"></asp:BoundField>
                                 <asp:BoundField HeaderText="Sinh viên tối đa" DataField="maxStudent" HeaderStyle-Height="25" ItemStyle-HorizontalAlign="center" SortExpression="roomId"></asp:BoundField>
-                                <asp:BoundField HeaderText="Sinh viên hiện tại" DataField="currentStudent" HeaderStyle-Height="25" ItemStyle-HorizontalAlign="center" SortExpression="roomId"></asp:BoundField>
+                                <asp:BoundField HeaderText="Sinh viên hiện tại" ReadOnly=true DataField="currentStudent" HeaderStyle-Height="25" ItemStyle-HorizontalAlign="center" SortExpression="roomId"></asp:BoundField>
                                 <asp:BoundField HeaderText="Tòa" DataField="buildingName" HeaderStyle-Height="25" ItemStyle-HorizontalAlign="center" SortExpression="roomId"></asp:BoundField>
                                 <asp:TemplateField>
                                     <ItemTemplate>
-                                        <asp:LinkButton ID="SelectButton" runat="server" Text="Chọn" CommandName="Select"></asp:LinkButton>
+                                        <asp:LinkButton ID="SelectButton" runat="server" Text="Sửa" CommandName="Select"></asp:LinkButton>
                                     </ItemTemplate>
                                 </asp:TemplateField>
                             </Columns>

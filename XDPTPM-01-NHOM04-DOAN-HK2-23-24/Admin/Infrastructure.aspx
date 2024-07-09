@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/Admin.Master" AutoEventWireup="true" CodeBehind="Infrastructure.aspx.cs" Inherits="XDPTPM_01_NHOM04_DOAN_HK2_23_24.Admin.Author" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/Admin.Master" AutoEventWireup="true" CodeBehind="Infrastructure.aspx.cs" Inherits="XDPTPM_01_NHOM04_DOAN_HK2_23_24.Admin.Infrastructure" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -10,71 +10,74 @@
                 <h3 class="text-center">Cơ sở vật chất</h3>
             </div>
         </div>
-        <div class="input-group mb-3">
-            <input type="text" class="form-control mb-4" placeholder="Nhập mã phòng" aria-describedby="button-addon3" />
-            <div class="input-group-append mb-4">
-                <button class="btn btn-outline-success" type="button" id="searchStudent">Tìm kiếm</button>
-            </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th scope="col">Tòa</th>
-                                <th scope="col">Mã phòng</th>
-                                <th scope="col">Tủ Đồ</th>
-                                <th scope="col">Điều hòa</th>
-                                <th scope="col">Diện tích phòng(m2)</th>
-                                <th scope="col">Số lượng giường</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>KTX A2</td>
-                                <td>01</td>
-                                <td>1</td>
-                                <td>1</td>
-                                <td>34</td>
-                                <td>5</td>
-                            </tr>
-                        </tbody>
-                    </table>
+
+        <input type="text" runat="server" id="infrastructure" visible="false" />
+        <div class="row">
+            <div class="col-md-3">
+                <div class="mb-3">
+                    <label for="" class="form-label text-success">Phòng</label>
+                    <asp:DropDownList runat="server" CssClass="form-control" ID="roomName">
+                    </asp:DropDownList>
+
                 </div>
-                <div class="col-sm-6">
-                    <div class="container-fluid pb-3 pt-2 bg-forestgreen rounded">
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <label for="inputName">Tòa</label>
-                                <input type="text" autocomplete="off" class="form-control" id="building_id">
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label for="inputName">Mã phòng</label>
-                                <input type="text" autocomplete="off" class="form-control" id="room_id">
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label for="student_id">Tủ đồ</label>
-                                <input type="text" autocomplete="off" class="form-control" id="wardrobe">
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label for="_class">Điều hòa</label>
-                                <input type="text" autocomplete="off" class="form-control" id="airConditioner">
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <label for="inputName">Diện tích phòng(m2)</label>
-                                <input type="text" autocomplete="off" class="form-control" id="roomArea">
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label for="">Số lượng giường</label>
-                                <input type="text" autocomplete="off" class="form-control" id="numBeds">
-                            </div>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Thêm</button>
-                        <button type="submit" class="btn btn-danger">Sửa</button>
-                        <button type="submit" class="btn btn-success">Xóa</button>
+                <div class="mb-3">
+                    <label for="" class="form-label text-success">Số lượng tủ quần áo</label>
+                    <input type="text" placeholder="Số lượng tủ quần áo ..." autocomplete="off" class="form-control" runat="server" id="IWardrobe" />
+                </div>
+
+                <div class="mb-3">
+                    <label for="" class="form-label text-success">Số lượng điều hòa</label>
+                    <input type="text" placeholder="Số lượng điều hòa ..." autocomplete="off" class="form-control" runat="server" id="IAircondition" />
+                </div>
+
+                <div class="mb-3">
+                    <label for="" class="form-label text-success">Số lượng giường</label>
+                    <input type="text" placeholder="Số lượng giường ..." autocomplete="off" class="form-control" runat="server" id="IBed" />
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label text-success">Diện tích phòng(m2)</label>
+                    <input type="text" placeholder="Diện tích phòng(m2) ..." autocomplete="off" class="form-control" runat="server" id="IAcreage" />
+                </div>
+
+                <div class="row">
+                    <div class="col d-grid">
+                        <asp:Button Text="Thêm" runat="server" ID="AddBtn" Width="65px" class="btn-outline-success btn-block btn" OnClick="AddBtn_Click" />
+
                     </div>
+
+                    <div class="col d-grid">
+                        <asp:Button Text="Sửa" runat="server" ID="UpdateBtn" class="btn-outline-primary btn-block btn" OnClick="UpdateBtn_Click" />
+                    </div>
+
+                    <div class="col d-grid">
+                        <asp:Button Text="Xóa" runat="server" ID="DeleteBtn" class="btn-outline-danger btn-block btn" OnClick="DeleteBtn_Click" />
+
+                    </div>
+
+                    <asp:Label runat="server" ID="ErrMsg" class="text-danger"></asp:Label>
                 </div>
+            </div>
+            <div class="col-md-8">
+                <div class="mb-3">
+                    <label for="txtSearchRoomName" class="form-label text-success">Tìm kiếm phòng</label>
+                    <input type="text" placeholder="Nhập tên phòng ..." autocomplete="off" class="form-control" runat="server" id="txtSearchRoomName" />
+                </div>
+
+                <asp:Button Text="Tìm kiếm" runat="server" ID="SearchRoomNameBtn" class="btn-outline-info btn-block btn" Width="100px" OnClick="SearchRoomNameBtn_Click" /></br>
+
+        <asp:GridView ID="InfrastructureLists" runat="server" AutoGenerateColumns="false" class="table table-bordered" AutoGenerateSelectButton="True" AllowPaging="True" PageSize="5" OnPageIndexChanging="InfrastructureLists_PageIndexChanging" OnSelectedIndexChanged="InfrastructureLists_SelectedIndexChanged">
+            <SelectedRowStyle BackColor="#C5BBAF" Font-Bold="true" ForeColor="#333333" />
+            <Columns>
+                <asp:BoundField DataField="infrastructureID" HeaderText="Mã CSVC" />
+                <asp:BoundField DataField="wardrobe_quantity" HeaderText="Số lượng tủ quần áo" />
+                <asp:BoundField DataField="aircondition_quantity" HeaderText="Số lượng điều hòa" />
+                <asp:BoundField DataField="bed_quantity" HeaderText="Số lượng giường" />
+                <asp:BoundField DataField="room_acreage" HeaderText="Diện tích phòng(m2)" />
+                <asp:BoundField DataField="createAt" HeaderText="Ngày thêm" DataFormatString="{0:dd/MM/yyyy}" />
+                <asp:BoundField DataField="updateAt" HeaderText="Ngày cập nhật" DataFormatString="{0:dd/MM/yyyy}" />
+                <asp:BoundField DataField="roomName" HeaderText="Tên Phòng" />
+            </Columns>
+        </asp:GridView>
             </div>
         </div>
     </div>

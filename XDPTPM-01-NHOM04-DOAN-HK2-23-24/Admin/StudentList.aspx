@@ -10,82 +10,80 @@
             </div>
         </div>
 
-        <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Nhập mã sinh viên" aria-label="StudentID" aria-describedby="button-addon2">
-            <div class="input-group-append">
-                <button class="btn btn-outline-success" type="button" id="searchStudentBtn">tìm kiếm</button>
-            </div>
-        </div>
-        <div class="sort row">
-            <div class="input-group mb-3 col-sm-6">
-                <div class="input-group-prepend">
-                    <label class="input-group-text" for="inputGroupSelect01">Họ tên</label>
-                </div>
-                <select class="custom-select" id="inputGroupSelect01">
-                    <option value="" selected>từ A -> Z</option>
-                    <option value="decrise">từ Z -> A</option>
-                </select>
-            </div>
-            <div class="input-group mb-3 col-sm-6">
-                <div class="input-group-prepend">
-                    <label class="input-group-text" for="inputGroupSelect02">Phòng</label>
-                </div>
-                <select class="custom-select" id="inputGroupSelect02">
-                    <option value="" selected>từ nhỏ -> lớn</option>
-                    <option value="decrise">từ lớn -> nhỏ</option>
-                </select>
-            </div>
-        </div>
         <div class="row">
-            <div class="col-lg-6">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th scope="col">MSV</th>
-                            <th scope="col">Họ tên</th>
-                            <th scope="col">Phòng</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Nguyễn Văn A</td>
-                            <td>101</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="col-lg-6 rounded">
-                <div class="container-fluid pb-3 pt-2 bg-forestgreen rounded">
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="name">Họ tên</label>
-                            <input type="text" class="form-control" id="name">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="student_id">Mã sinh viên</label>
-                            <input type="text" class="form-control" id="student_id">
-                        </div>
+            <div class="col-md-3">
+                <div class="mb-3">
+                    <label for="" class="form-label text-success">Tên sinh viên</label>
+                    <input type="text" placeholder="Tên sinh viên ..." autocomplete="off" class="form-control" runat="server" id="SName"/>
+                </div>
+
+                <div class="mb-3">
+                    <label for="" class="form-label text-success">Giới tính</label>
+                    <asp:DropDownList  runat="server" CssClass="form-control" id="gender">
+                        <asp:ListItem>Nam</asp:ListItem>
+                        <asp:ListItem>Nữ</asp:ListItem>
+                    </asp:DropDownList>
+                </div>
+
+                <div class="mb-3">
+                    <label for="" class="form-label text-success">Mã sinh viên</label>
+                    <input type="text" placeholder="Mã sinh viên ..." autocomplete="off" class="form-control" runat="server" id="MSV"/>
+                </div>
+
+                <div class="mb-3">
+                    <label for="" class="form-label text-success">CCCD</label>
+                    <input type="text" placeholder="CCCD ..." autocomplete="off" class="form-control" runat="server" id="CCCD"/>
+                </div>
+
+                <div class="mb-3">
+                    <label for="" class="form-label text-success">Ngày tháng năm sinh</label>
+                    <input type="text" placeholder="Ngày tháng năm sinh ..." autocomplete="off" class="form-control" runat="server" id="Dob"/>
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label text-success">Phòng</label>
+                    <input type="text" placeholder="Phòng ..." autocomplete="off" class="form-control" runat="server" id="SRoom"/>
+                </div>
+
+                <div class="row">
+                    <div class="col d-grid">
+                        <asp:Button Text="Thêm" runat="server" id="AddBtn" width="65px"  class="btn-outline-success btn-block btn" OnClick="AddBtn_Click" />
+
                     </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-3">
-                            <label for="gender">Giới tính</label>
-                            <input type="text" class="form-control" id="gender">
-                        </div>
-                        <div class="form-group col-md-3">
-                            <label for="room_id">Số phòng</label>
-                            <input type="text" class="form-control" id="room_id">
-                        </div>
-                        <div class="form-group col-md-3">
-                            <label for="cohort">Khóa</label>
-                            <input type="text" class="form-control" id="cohort">
-                        </div>
+
+                    <div class="col d-grid">
+                        <asp:Button Text="Sửa" runat="server" id="UpdateBtn" class="btn-outline-primary btn-block btn" OnClick="UpdateBtn_Click" />
                     </div>
-                    <button type="submit" class="btn btn-primary">Cập nhật</button>
-                    <button type="submit" class="btn btn-warning">Sửa</button>
-                    <button type="submit" class="btn btn-danger">Xóa</button>
+
+                    <div class="col d-grid">
+                        <asp:Button Text="Xóa" runat="server" id="DeleteBtn" class="btn-outline-danger btn-block btn" OnClick="DeleteBtn_Click" />
+
+                    </div>
+
+                    <asp:Label runat="server" ID="ErrMsg" class="text-danger"></asp:Label>
                 </div>
             </div>
-        </div>     
+            <div class="col-md-8">
+                <div class="mb-3">
+                    <label for="txtSearchStudent" class="form-label text-success">Tìm kiếm sinh viên</label>
+                    <input type="text" placeholder="Tìm kiếm sinh viên ..." autocomplete="off" class="form-control" runat="server" id="txtSearchStudent" />
+                </div>
+
+                <asp:Button Text="Tìm kiếm" runat="server" ID="SearchStudentBtn"  class="btn-outline-info btn-block btn" width="100px" OnClick="SearchStudentBtn_Click"/> </br>
+
+                <asp:GridView ID="StudentLists" runat="server" AutoGenerateColumns="false" class="table table-bordered" AutoGenerateSelectButton="True"  AllowPaging="True" PageSize="3"  OnPageIndexChanging="StudentLists_PageIndexChanging" OnSelectedIndexChanged="StudentLists_SelectedIndexChanged">
+                    <SelectedRowStyle BackColor="#C5BBAF" Font-Bold="true" ForeColor="#333333"/>
+                    <Columns>
+                        <asp:BoundField DataField="studentID" HeaderText="ID" />
+                        <asp:BoundField DataField="studentName" HeaderText="Tên SV" />
+                        <asp:BoundField DataField="createAt" HeaderText="Ngày thêm" DataFormatString="{0:dd/MM/yyyy}"/>
+                        <asp:BoundField DataField="gender" HeaderText="Giới tính" />
+                        <asp:BoundField DataField="StudentCode" HeaderText="MSV" />
+                        <asp:BoundField DataField="numIdentify" HeaderText="CCCD"/>
+                        <asp:BoundField DataField="dateOfBirth" HeaderText="Ngày sinh" DataFormatString="{0:dd/MM/yyyy}" />
+                        <asp:BoundField DataField="roomName" HeaderText="Phòng" />
+                    </Columns>
+                </asp:GridView>
+            </div>
+        </div>
     </div>
 </asp:Content>

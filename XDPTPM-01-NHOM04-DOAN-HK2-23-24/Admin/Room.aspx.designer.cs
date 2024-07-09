@@ -15,49 +15,58 @@ namespace XDPTPM_01_NHOM04_DOAN_HK2_23_24.Admin
     {
 
         /// <summary>
-        /// BName control.
+        /// ScriptManager1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText BName;
+        protected global::System.Web.UI.ScriptManager ScriptManager1;
 
         /// <summary>
-        /// BAuthor control.
+        /// UpdatePanel1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText BAuthor;
+        protected global::System.Web.UI.UpdatePanel UpdatePanel1;
 
         /// <summary>
-        /// BType control.
+        /// lblResult control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText BType;
+        protected global::System.Web.UI.WebControls.Label lblResult;
 
         /// <summary>
-        /// BPrice control.
+        /// RoomName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText BPrice;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText RoomName;
 
         /// <summary>
-        /// BQuantity control.
+        /// MaxStudent control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText BQuantity;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl MaxStudent;
+
+        /// <summary>
+        /// RoomBuilding control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList RoomBuilding;
 
         /// <summary>
         /// UpdateBtn control.
@@ -78,15 +87,6 @@ namespace XDPTPM_01_NHOM04_DOAN_HK2_23_24.Admin
         protected global::System.Web.UI.WebControls.Button AddBtn;
 
         /// <summary>
-        /// DeleteBtn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button DeleteBtn;
-
-        /// <summary>
         /// ErrMsg control.
         /// </summary>
         /// <remarks>
@@ -96,13 +96,13 @@ namespace XDPTPM_01_NHOM04_DOAN_HK2_23_24.Admin
         protected global::System.Web.UI.WebControls.Label ErrMsg;
 
         /// <summary>
-        /// txtSearchBook control.
+        /// txtSearchRoom control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtSearchBook;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtSearchRoom;
 
         /// <summary>
         /// SearchBookBtn control.
@@ -112,6 +112,15 @@ namespace XDPTPM_01_NHOM04_DOAN_HK2_23_24.Admin
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button SearchBookBtn;
+
+        /// <summary>
+        /// ExitBookBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ExitBookBtn;
 
         /// <summary>
         /// RoomList control.

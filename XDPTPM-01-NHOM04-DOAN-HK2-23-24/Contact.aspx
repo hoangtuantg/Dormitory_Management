@@ -34,13 +34,14 @@
             <div class="col-5">
                 <h3>Địa chỉ liên hệ</h3>
                 <address>
-                    Kí túc xá học viện nông nghiệp<br />
-                    <abbr title="Phone">SĐT:</abbr>
-                    123 456 789
+                    Ban Công tác chính trị & Công tác sinh viên<br />
+                    Địa chỉ: Phòng 101-106, Nhà hành chính, Học viện Nông nghiệp Việt Nam<br />
+                    <abbr title="Phone">Điện thoại:</abbr>
+                    024.6261.7528
                 </address>
 
                 <address>
-                    <strong>Support:</strong> <a href="mailto:Support@example.com">Support@example.com</a><br />
+                    <strong>Email:</strong> <a href="mailto:ctsv@vnua.edu.vn">ctsv@vnua.edu.vn</a><br />
                 </address>
             </div>
         </div>

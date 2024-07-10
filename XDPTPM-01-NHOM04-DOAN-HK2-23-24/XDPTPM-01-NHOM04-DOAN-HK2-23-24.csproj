@@ -109,6 +109,7 @@
     <Content Include="Admin\Room.aspx" />
     <Content Include="Admin\StaffList.aspx" />
     <Content Include="Admin\StudentList.aspx" />
+    <Content Include="Admin\UserList.aspx" />
     <Content Include="Admin\Users.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
@@ -246,6 +247,13 @@
     </Compile>
     <Compile Include="Admin\StudentList.aspx.designer.cs">
       <DependentUpon>StudentList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserList.aspx.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserList.aspx.designer.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Users.aspx.cs">
       <DependentUpon>Users.aspx</DependentUpon>

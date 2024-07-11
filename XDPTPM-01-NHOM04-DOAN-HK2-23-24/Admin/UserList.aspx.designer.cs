@@ -123,7 +123,7 @@ namespace XDPTPM_01_NHOM04_DOAN_HK2_23_24.Admin
         protected global::System.Web.UI.WebControls.Button SearchUserBtn;
 
         /// <summary>
-        /// UserList control.
+        /// UsersList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.

@@ -31,14 +31,6 @@
                     <label for="ly_do">Lý do muốn đăng ký ở ký túc xá</label>
                     <textarea id="ly_do" name="ly_do" rows="4" required></textarea>
                 </div>
-                <div class="form-row">
-                    <label for="mong_muon_ktx">Ký túc xá mong muốn</label>
-                    <select id="mong_muon_ktx" name="mong_muon_ktx" required>
-                        <option value="ktx1">Ký Túc Xá A2</option>
-                        <option value="ktx2">Ký Túc Xá B3</option>
-                        <option value="ktx3">Ký Túc Xá B4</option>
-                    </select>
-                </div>
                 <div class="form-row d-flex justify-content-center">
                     <button class="col-6" type="submit">Đăng Ký</button>
                 </div>

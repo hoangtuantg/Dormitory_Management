@@ -10,32 +10,26 @@
         </div>
         <div class="row">
             <div class="col-lg-6">
-                <img src="https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745" alt="" width ="300px"/>
+                <img src="https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745" alt="" width ="250px"/>
             </div>
             <div class="col-lg-6 rounded">
                 <div class="container-fluid pb-3 pt-2 bg-forestgreen rounded">
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <label for="staff_id">Mã cán bộ</label>
-                            <input type="text" class="form-control" id="staff_id">
+                            <label for="fullname">Tên cán bộ</label>
+                            <input type="text" class="form-control" id="fullname">
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="name">Họ tên</label>
-                            <input type="text" class="form-control" id="name">
+                            <label for="username">Tài khoản</label>
+                            <input type="text" class="form-control" id="username">
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="student_id">Tòa quản lý</label>
-                            <input type="text" class="form-control" id="student_id">
+                            <label for="oldPass">Mật khẩu cũ</label>
+                            <input type="text" class="form-control" id="oldPass">
                         </div>
-                        <div class="form-group col-md-3">
-                            <label for="gender">Giới tính</label>
-                            <input type="text" class="form-control" id="gender">
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-3">
-                            <label for="gender">ABC</label>
-                            <input type="text" class="form-control" id="gender">
+                        <div class="form-group col-md-6">
+                            <label for="newPass">Mật khẩu mới</label>
+                            <input type="text" class="form-control" id="newPass">
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primary">Cập nhật</button>

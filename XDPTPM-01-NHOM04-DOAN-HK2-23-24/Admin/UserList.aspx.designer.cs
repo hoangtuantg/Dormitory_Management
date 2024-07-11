@@ -11,62 +11,62 @@ namespace XDPTPM_01_NHOM04_DOAN_HK2_23_24.Admin
 {
 
 
-    public partial class Infrastructure
+    public partial class UserList
     {
 
         /// <summary>
-        /// infrastructure control.
+        /// FName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText infrastructure;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText FName;
 
         /// <summary>
-        /// roomName control.
+        /// UDob control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList roomName;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText UDob;
 
         /// <summary>
-        /// IWardrobe control.
+        /// gender control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText IWardrobe;
+        protected global::System.Web.UI.WebControls.DropDownList gender;
 
         /// <summary>
-        /// IAircondition control.
+        /// UName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText IAircondition;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText UName;
 
         /// <summary>
-        /// IBed control.
+        /// Pass control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText IBed;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText Pass;
 
         /// <summary>
-        /// IAcreage control.
+        /// admin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText IAcreage;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText admin;
 
         /// <summary>
         /// AddBtn control.
@@ -105,30 +105,30 @@ namespace XDPTPM_01_NHOM04_DOAN_HK2_23_24.Admin
         protected global::System.Web.UI.WebControls.Label ErrMsg;
 
         /// <summary>
-        /// txtSearchRoomName control.
+        /// txtSearchUser control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtSearchRoomName;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtSearchUser;
 
         /// <summary>
-        /// SearchRoomNameBtn control.
+        /// SearchUserBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button SearchRoomNameBtn;
+        protected global::System.Web.UI.WebControls.Button SearchUserBtn;
 
         /// <summary>
-        /// InfrastructureLists control.
+        /// UserList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView InfrastructureLists;
+        protected global::System.Web.UI.WebControls.GridView UsersList;
     }
 }

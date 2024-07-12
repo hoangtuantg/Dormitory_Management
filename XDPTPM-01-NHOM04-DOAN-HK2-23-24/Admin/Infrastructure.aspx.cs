@@ -122,16 +122,6 @@ namespace XDPTPM_01_NHOM04_DOAN_HK2_23_24.Admin
             }
         }
 
-        private void ClearFields()
-        {
-            roomName.SelectedItem.Value = "";
-            IWardrobe.Value = "";
-            IAircondition.Value = "";
-            IBed.Value = "";
-            IAcreage.Value = "";
-            Key = 0;
-        }
-
         private int GetRoomIdFromName(string roomName)
         {
             string query = "SELECT roomId FROM room_tbl WHERE roomName = @roomName";
@@ -151,6 +141,16 @@ namespace XDPTPM_01_NHOM04_DOAN_HK2_23_24.Admin
             helper.closeConnection();
 
             return roomId;
+        }
+
+        private void ClearFields()
+        {
+            roomName.SelectedItem.Value = "";
+            IWardrobe.Value = "";
+            IAircondition.Value = "";
+            IBed.Value = "";
+            IAcreage.Value = "";
+            Key = 0;
         }
 
         protected void AddBtn_Click(object sender, EventArgs e)
@@ -265,6 +265,7 @@ namespace XDPTPM_01_NHOM04_DOAN_HK2_23_24.Admin
                             aircondition_quantity = @IAircondition,
                             bed_quantity = @IBed,
                             room_acreage = @IAcreage,
+                            updateAt = @IUpdateAt,
                             roomId = @RoomId
                         WHERE infrastructureId = @InfrastructureId";
 
@@ -276,6 +277,7 @@ namespace XDPTPM_01_NHOM04_DOAN_HK2_23_24.Admin
                         cmd.Parameters.AddWithValue("@IAircondition", Aircondition);
                         cmd.Parameters.AddWithValue("@IBed", Bed);
                         cmd.Parameters.AddWithValue("@IAcreage", Acreage);
+                        cmd.Parameters.AddWithValue("@IUpdateAt", DateTime.Now);
                         cmd.Parameters.AddWithValue("@RoomId", roomId);
 
                         int result = cmd.ExecuteNonQuery();

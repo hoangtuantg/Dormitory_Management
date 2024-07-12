@@ -38,7 +38,7 @@ select {
     box-sizing: border-box;
 }
 
-button[type="submit"] {
+.btnsubmit {
     background-color: #4caf50;
     color: #fff;
     padding: 10px 20px;
@@ -49,6 +49,6 @@ button[type="submit"] {
     transition: background-color 0.3s ease;
 }
 
-    button[type="submit"]:hover {
+.btnsubmit:hover {
         background-color: #45a049;
     }

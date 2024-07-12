@@ -58,13 +58,13 @@
                         <i class="fa-solid fa-users-gear mx-2" height="20" width="20"></i>
                         <label>Danh sách cán bộ</label>
                     </a>
-                    <a href="Users.aspx" data-ajax="true" class="mb-4 site-bar-child rounded">
-                        <i class="fa-solid fa-address-card mx-2" height="20" width="20"></i>
-                        <label>Tài khoản</label>
-                    </a>
                     <a href="UserList.aspx" data-ajax="true" class="mb-4 site-bar-child rounded">
                         <i class="fa-solid fa-address-card mx-2" height="20" width="20"></i>
                         <label>Danh sách người dùng</label>
+                    </a>
+                    <a href="Users.aspx" data-ajax="true" class="mb-4 site-bar-child rounded">
+                        <i class="fa-solid fa-address-card mx-2" height="20" width="20"></i>
+                        <label>Tài khoản</label>
                     </a>
                     <a href="../Login.aspx" data-ajax="true" class="mb-4 site-bar-child rounded">
                         <i class="fa-solid fa-right-from-bracket mx-2" height="20" width="20"></i>

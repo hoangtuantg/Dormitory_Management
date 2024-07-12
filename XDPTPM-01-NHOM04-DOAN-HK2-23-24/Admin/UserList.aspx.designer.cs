@@ -15,6 +15,24 @@ namespace XDPTPM_01_NHOM04_DOAN_HK2_23_24.Admin
     {
 
         /// <summary>
+        /// ScriptManager4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.ScriptManager ScriptManager4;
+
+        /// <summary>
+        /// UpdatePanel4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel UpdatePanel4;
+
+        /// <summary>
         /// FName control.
         /// </summary>
         /// <remarks>
@@ -24,13 +42,13 @@ namespace XDPTPM_01_NHOM04_DOAN_HK2_23_24.Admin
         protected global::System.Web.UI.HtmlControls.HtmlInputText FName;
 
         /// <summary>
-        /// UDob control.
+        /// UDOB control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText UDob;
+        protected global::System.Web.UI.WebControls.TextBox UDOB;
 
         /// <summary>
         /// gender control.
@@ -66,7 +84,7 @@ namespace XDPTPM_01_NHOM04_DOAN_HK2_23_24.Admin
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText admin;
+        protected global::System.Web.UI.WebControls.DropDownList admin;
 
         /// <summary>
         /// AddBtn control.

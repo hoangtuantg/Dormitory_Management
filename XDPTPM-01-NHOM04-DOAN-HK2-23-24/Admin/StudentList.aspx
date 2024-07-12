@@ -9,6 +9,9 @@
                 <h3 class="text-center">Danh sách sinh viên</h3>
             </div>
         </div>
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+        <ContentTemplate>
 
         <div class="row">
             <div class="col-md-3">
@@ -85,5 +88,7 @@
                 </asp:GridView>
             </div>
         </div>
+        </ContentTemplate>
+        </asp:UpdatePanel>
     </div>
 </asp:Content>

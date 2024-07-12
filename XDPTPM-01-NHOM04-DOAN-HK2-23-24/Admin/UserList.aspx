@@ -73,14 +73,13 @@
             <asp:GridView ID="UsersList" runat="server" AutoGenerateColumns="false" class="table table-bordered" AutoGenerateSelectButton="True"  AllowPaging="True" PageSize="3"  >
                 <SelectedRowStyle BackColor="#C5BBAF" Font-Bold="true" ForeColor="#333333"/>
                 <Columns>
-                    <asp:BoundField DataField="" HeaderText="" />
-                    <asp:BoundField DataField="" HeaderText="" />
-                    <asp:BoundField DataField="" HeaderText="" DataFormatString="{0:dd/MM/yyyy}"/>
-                    <asp:BoundField DataField="" HeaderText="" />
-                    <asp:BoundField DataField="" HeaderText="" />
-                    <asp:BoundField DataField="" HeaderText=""/>
-                    <asp:BoundField DataField="" HeaderText="" />
-                    <asp:BoundField DataField="" HeaderText="" />
+                    <asp:BoundField DataField="userId" HeaderText="" />
+                    <asp:BoundField DataField="userName" HeaderText="" />
+                    <asp:BoundField DataField="fullName" HeaderText="" />
+                    <asp:BoundField DataField="dateOfBirth" HeaderText="" DataFormatString="{0:dd/MM/yyyy}"/>
+                    <asp:BoundField DataField="gender" HeaderText="" />
+                    <asp:BoundField DataField="password" HeaderText=""/>
+                    <asp:BoundField DataField="isadmin" HeaderText="" />
                 </Columns>
             </asp:GridView>
         </div>

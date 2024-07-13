@@ -76,9 +76,10 @@
             <asp:Button Text="Tìm kiếm" runat="server" ID="SearchUserBtn"  class="btn-outline-info btn-block btn" width="100px" OnClick="SearchUserBtn_Click"/> 
             
             <br>
-            <asp:GridView ID="UsersList" runat="server" AllowPaging="True" AutoGenerateColumns="false" AutoGenerateSelectButton="True" class="table table-bordered" PageSize="4" OnSelectedIndexChanged="UsersList_SelectedIndexChanged1"  OnPageIndexChanging="UsersList_PageIndexChanging">
+            <asp:GridView ID="UsersList" runat="server" AllowPaging="True" AutoGenerateColumns="false" AutoGenerateSelectButton="false" class="table table-bordered" PageSize="4" OnSelectedIndexChanged="UsersList_SelectedIndexChanged1"  OnPageIndexChanging="UsersList_PageIndexChanging">
                 <SelectedRowStyle BackColor="#C5BBAF" Font-Bold="true" ForeColor="#333333" />
                 <Columns>
+                    <asp:ButtonField CommandName="Select" Text="Chọn" ItemStyle-HorizontalAlign="Center" />
                     <asp:BoundField DataField="userId" HeaderText="ID" />
                     <asp:BoundField DataField="fullName" HeaderText="Tên cán bộ" />
                     <asp:BoundField DataField="gender" HeaderText="Giới tính" />

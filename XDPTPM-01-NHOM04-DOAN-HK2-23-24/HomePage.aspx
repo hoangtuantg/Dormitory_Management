@@ -76,6 +76,51 @@
                     <span class="dot" onclick="currentSlide(9)"></span>
                 </div>
             </div>
+            <div>
+                .
+            </div>
+            <div class="conter">
+    <header>
+        <h1>Ký túc xá Học viện Nông nghiệp Việt Nam</h1>
+        <p>Tác giả: THM</p>
+    </header>
+    <main>
+        <article>
+            <section>
+                <h2>Giới thiệu chung</h2>
+                <p>Ký túc xá Học viện Nông nghiệp Việt Nam là nơi cung cấp chỗ ở cho hàng ngàn sinh viên đến từ khắp mọi miền đất nước. Nằm trong khuôn viên xanh mát và rộng lớn của Học viện, ký túc xá không chỉ là nơi ở mà còn là môi trường học tập, rèn luyện và phát triển toàn diện cho sinh viên.</p>
+            </section>
+            <section>
+                <h2>Cơ sở vật chất</h2>
+                <p>Ký túc xá được trang bị đầy đủ các tiện nghi hiện đại, bao gồm:</p>
+                <ul >
+                    <li >Phòng ở thoáng mát, sạch sẽ với các loại phòng phòng tập thể như phòng 4 ngươi, phòng 6 người và phòng 8 người.</li>
+                    <li >Wifi miễn phí phủ sóng toàn khu vực ký túc xá.</li>
+                    <li >Hệ thống an ninh 24/7 đảm bảo an toàn cho sinh viên.</li>
+                    <li >Các khu vực sinh hoạt chung như phòng học, phòng thể dục, sân bóng đá, bóng chuyền, phòng tập gym.</li>
+                </ul>
+                <div class="image-container">
+                    <img src="./datas/images/img9.jpg" alt="Ký túc xá Học viện Nông nghiệp Việt Nam">
+                    <p class="image-caption"> Khuôn viên ký túc xá Học viện Nông nghiệp Việt Nam</p>
+                </div>
+            </section>
+            <section>
+                <h2>Hoạt động và dịch vụ</h2>
+                <p>Ký túc xá Học viện Nông nghiệp Việt Nam thường xuyên tổ chức các hoạt động văn hóa, thể thao, giúp sinh viên thư giãn sau những giờ học căng thẳng. Ngoài ra, các dịch vụ hỗ trợ sinh viên như nhà ăn, giặt là, cửa hàng tiện lợi cũng được cung cấp đầy đủ.</p>
+                <div class="image-container">
+                    <img src="./datas/images/img10.jpg" alt="Hoạt động thể thao tại ký túc xá">
+                    <p class="image-caption">Hoạt động thể thao tại ký túc xá</p>
+                </div>
+            </section>
+            <section>
+                <h2>Liên hệ</h2>
+                <p>Để biết thêm thông tin chi tiết về ký túc xá Học viện Nông nghiệp Việt Nam, vui lòng liên hệ theo thông tin bên dưới:</p>
+                <p>Email: @vnua.edu.vn</p>
+                <p>Điện thoại: 0886170831</p>
+            </section>
+        </article>
+    </main>
+            </div>
         </section>
         <script src="Scripts/WebForms/HomePage.js"></script>
     </header>

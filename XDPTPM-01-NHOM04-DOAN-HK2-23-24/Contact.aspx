@@ -8,29 +8,13 @@
         class="ggMap"></iframe>
     <main class="container">
         <div class="row content">
-            <div class="col-7">
-                <h2 class="title">Liên hệ</h2>
-                <span class="subTitle">Hãy nhập mẫu dưới đây để liên hệ với chúng tôi!</span>
-                <form class="contactForm" id="contactForm" action="/" method="post">
-                    <div class="form-group">
-                        <label for="fullName">Họ tên</label>
-                        <input type="text" name="fullName" value="" class="form-control" />
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" value="" class="form-control" />
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Số điện thoại</label>
-                        <input type="text" name="phone" value="" class="form-control" />
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Nội dung liên hệ:</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-success">Gửi</button>
-                </form>
-            </div>
+                 <div class="row content-icon-container">
+                    <img src="./datas/images/Facebook.jpg" style="width: 5%" style="height: 5%" alt="Icon 1" class="row content-icon-container-icon">
+                    <img src="./datas/images/YouTube.jpg" style="width: 5%" style="height: 5%" alt="Icon 2" class="row content-icon-container-icon">
+                    <img src="./datas/images/Instagram.jpg" style="width: 5%" style="height: 5%" alt="Icon 3" class="row content-icon-container-icon">
+                    <img src="./datas/images/Google.jpg" style="width: 5%" style="height: 5%" alt="Icon 4" class="row content-icon-container-icon">
+                    <img src="./datas/images/Map.jpg" style="width: 5%" style="height: 5%" alt="Icon 4" class="row content-icon-container-icon">
+                 </div>
             <div class="col-5">
                 <h3>Địa chỉ liên hệ</h3>
                 <address>

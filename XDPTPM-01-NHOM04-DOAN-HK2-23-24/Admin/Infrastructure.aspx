@@ -61,7 +61,7 @@
                             <asp:Label runat="server" ID="ErrMsg" class="text-danger"></asp:Label>
                         </div>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-lg-9">
                         <div class="mb-3">
                             <label for="txtSearchRoomName" class="form-label text-success">Tìm kiếm phòng</label>
                             <input type="text" placeholder="Nhập tên phòng ..." autocomplete="off" class="form-control" runat="server" id="txtSearchRoomName" />
@@ -69,9 +69,10 @@
 
                         <asp:Button Text="Tìm kiếm" runat="server" ID="SearchRoomNameBtn" class="btn-outline-info btn-block btn" Width="100px" OnClick="SearchRoomNameBtn_Click" /></br>
 
-        <asp:GridView ID="InfrastructureLists" runat="server" AutoGenerateColumns="false" class="table table-bordered" AutoGenerateSelectButton="True" AllowPaging="True" PageSize="5" OnPageIndexChanging="InfrastructureLists_PageIndexChanging" OnSelectedIndexChanged="InfrastructureLists_SelectedIndexChanged">
+        <asp:GridView ID="InfrastructureLists" runat="server" AutoGenerateColumns="false" class="table table-bordered" AutoGenerateSelectButton="false" AllowPaging="True" PageSize="5" OnPageIndexChanging="InfrastructureLists_PageIndexChanging" OnSelectedIndexChanged="InfrastructureLists_SelectedIndexChanged">
             <SelectedRowStyle BackColor="#C5BBAF" Font-Bold="true" ForeColor="#333333" />
             <Columns>
+                <asp:ButtonField CommandName="Select" Text="Chọn" ItemStyle-HorizontalAlign="Center" />
                 <asp:BoundField DataField="infrastructureID" HeaderText="Mã CSVC" />
                 <asp:BoundField DataField="wardrobe_quantity" HeaderText="Số lượng tủ quần áo" />
                 <asp:BoundField DataField="aircondition_quantity" HeaderText="Số lượng điều hòa" />

@@ -91,7 +91,16 @@ namespace XDPTPM_01_NHOM04_DOAN_HK2_23_24.Admin
             gender.SelectedItem.Value = HttpUtility.HtmlDecode(StudentLists.SelectedRow.Cells[4].Text);
             MSV.Value = HttpUtility.HtmlDecode(StudentLists.SelectedRow.Cells[5].Text);
             CCCD.Value = HttpUtility.HtmlDecode(StudentLists.SelectedRow.Cells[6].Text);
-            Dob.Value = HttpUtility.HtmlDecode(StudentLists.SelectedRow.Cells[7].Text);
+            DateTime dob;
+            string dateText = HttpUtility.HtmlDecode(StudentLists.SelectedRow.Cells[7].Text);
+            if (DateTime.TryParseExact(dateText, "dd/MM/yyyy", null, System.Globalization.DateTimeStyles.None, out dob))
+            {
+                SDOB.Text = dob.ToString("yyyy-MM-dd");
+            }
+            else
+            {
+                SDOB.Text = string.Empty;
+            }
             SRoom.Value = HttpUtility.HtmlDecode(StudentLists.SelectedRow.Cells[8].Text);
 
             if (SName.Value == "")
@@ -110,7 +119,7 @@ namespace XDPTPM_01_NHOM04_DOAN_HK2_23_24.Admin
         {
             try
             {
-                if (SName.Value == "" || gender.SelectedIndex == -1 || MSV.Value == "" || CCCD.Value == "" || Dob.Value == "" || SRoom.Value == "")
+                if (SName.Value == "" || gender.SelectedIndex == -1 || MSV.Value == "" || CCCD.Value == "" || SDOB.Text == "" || SRoom.Value == "")
                 {
                     ErrMsg.Text = "Bạn chưa chọn nội dung muốn xóa!!!";
                 }
@@ -150,7 +159,7 @@ namespace XDPTPM_01_NHOM04_DOAN_HK2_23_24.Admin
             gender.SelectedIndex = -1;
             MSV.Value = "";
             CCCD.Value = "";
-            Dob.Value = "";
+            SDOB.Text = string.Empty;
             SRoom.Value = "";
             Key = 0;
         }
@@ -159,7 +168,7 @@ namespace XDPTPM_01_NHOM04_DOAN_HK2_23_24.Admin
         {
             try
             {
-                if (SName.Value == "" || gender.SelectedIndex == -1 || MSV.Value == "" || CCCD.Value == "" || Dob.Value == "" || SRoom.Value == "")
+                if (SName.Value == "" || gender.SelectedIndex == -1 || MSV.Value == "" || CCCD.Value == "" || SDOB.Text == "" || SRoom.Value == "")
                 {
                     ErrMsg.Text = "Vui lòng điền đầy đủ thông tin!";
                 }
@@ -169,7 +178,7 @@ namespace XDPTPM_01_NHOM04_DOAN_HK2_23_24.Admin
                     string SGender = gender.SelectedItem.ToString();
                     string SCode = MSV.Value;
                     string NI = CCCD.Value;
-                    string NgaySinh = Dob.Value;
+                    string NgaySinh = SDOB.Text;
                     string RoomName = SRoom.Value;
 
                     // Lấy roomId từ tên phòng
@@ -242,7 +251,7 @@ namespace XDPTPM_01_NHOM04_DOAN_HK2_23_24.Admin
         {
             try
             {
-                if (SName.Value == "" || gender.SelectedIndex == -1 || MSV.Value == "" || CCCD.Value == "" || Dob.Value == "" || SRoom.Value == "")
+                if (SName.Value == "" || gender.SelectedIndex == -1 || MSV.Value == "" || CCCD.Value == "" || SDOB.Text == "" || SRoom.Value == "")
                 {
                     ErrMsg.Text = "Vui lòng chọn sinh viên và điền đầy đủ thông tin để cập nhật!";
                     return;
@@ -260,7 +269,7 @@ namespace XDPTPM_01_NHOM04_DOAN_HK2_23_24.Admin
                 string SGender = gender.SelectedItem.ToString();
                 string SCode = MSV.Value;
                 string NI = CCCD.Value;
-                string NgaySinh = Dob.Value;
+                string NgaySinh = SDOB.Text;
                 string RoomName = SRoom.Value;
 
                 // Lấy roomId từ tên phòng

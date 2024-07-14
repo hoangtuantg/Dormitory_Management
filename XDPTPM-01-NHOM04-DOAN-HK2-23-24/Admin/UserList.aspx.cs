@@ -87,7 +87,8 @@ namespace XDPTPM_01_NHOM04_DOAN_HK2_23_24.Admin
         {
             FName.Value = HttpUtility.HtmlDecode(UsersList.SelectedRow.Cells[2].Text);
             DateTime dob;
-            if (DateTime.TryParse(HttpUtility.HtmlDecode(UsersList.SelectedRow.Cells[4].Text), out dob))
+            string dateText = HttpUtility.HtmlDecode(UsersList.SelectedRow.Cells[4].Text);
+            if (DateTime.TryParseExact(dateText, "dd/MM/yyyy", null, System.Globalization.DateTimeStyles.None, out dob))
             {
                 UDOB.Text = dob.ToString("yyyy-MM-dd");
             }

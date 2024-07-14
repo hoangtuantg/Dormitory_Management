@@ -37,10 +37,9 @@
                     <label for="" class="form-label text-success">CCCD</label>
                     <input type="text" placeholder="CCCD ..." autocomplete="off" class="form-control" runat="server" id="CCCD"/>
                 </div>
-
                 <div class="mb-3">
-                    <label for="" class="form-label text-success">Ngày tháng năm sinh</label>
-                    <input type="text" placeholder="Ngày tháng năm sinh ..." autocomplete="off" class="form-control" runat="server" id="Dob"/>
+                    <label for="" class="form-label text-success">Ngày sinh</label>
+                    <asp:TextBox ID="SDOB" runat="server" CssClass="form-control" TextMode="Date" placeholder="dd/mm/yyyy"></asp:TextBox>
                 </div>
                 <div class="mb-3">
                     <label for="" class="form-label text-success">Phòng</label>
@@ -73,9 +72,10 @@
 
                 <asp:Button Text="Tìm kiếm" runat="server" ID="SearchStudentBtn"  class="btn-outline-info btn-block btn" width="100px" OnClick="SearchStudentBtn_Click"/> </br>
 
-                <asp:GridView ID="StudentLists" runat="server" AutoGenerateColumns="false" class="table table-bordered" AutoGenerateSelectButton="True"  AllowPaging="True" PageSize="3"  OnPageIndexChanging="StudentLists_PageIndexChanging" OnSelectedIndexChanged="StudentLists_SelectedIndexChanged">
+                <asp:GridView ID="StudentLists" runat="server" AutoGenerateColumns="false" class="table table-bordered" AutoGenerateSelectButton="false"  AllowPaging="True" PageSize="3"  OnPageIndexChanging="StudentLists_PageIndexChanging" OnSelectedIndexChanged="StudentLists_SelectedIndexChanged">
                     <SelectedRowStyle BackColor="#C5BBAF" Font-Bold="true" ForeColor="#333333"/>
                     <Columns>
+                        <asp:ButtonField CommandName="Select" Text="Chọn" ItemStyle-HorizontalAlign="Center" />
                         <asp:BoundField DataField="studentID" HeaderText="ID" />
                         <asp:BoundField DataField="studentName" HeaderText="Tên SV" />
                         <asp:BoundField DataField="createAt" HeaderText="Ngày thêm" DataFormatString="{0:dd/MM/yyyy}"/>

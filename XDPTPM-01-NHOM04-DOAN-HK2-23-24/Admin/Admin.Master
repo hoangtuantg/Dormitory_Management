@@ -28,8 +28,8 @@
                     </div>
                     <div class="mb-5">
                         <i class="fa-solid fa-user"></i>
-                        <% if (Session["UserEmail"] != null) { %>
-                            <b>Xin chào, <%= Session["UserEmail"].ToString() %></b>
+                        <% if (Request.Cookies["UserInfo"] != null) { %>
+                            <b>Xin chào,<br /> <%= HttpUtility.UrlDecode(Request.Cookies["UserInfo"]["FullName"]) %></b>
                         <% } else { %>
                             <b>Chào mừng bạn!</b>
                         <% } %>
@@ -58,15 +58,17 @@
                         <i class="fa-solid fa-users-gear mx-2" height="20" width="20"></i>
                         <label>Danh sách cán bộ</label>
                     </a>
+                    <% if (IsAdmin) { %>
                     <a href="UserList.aspx" data-ajax="true" class="mb-4 site-bar-child rounded">
                         <i class="fa-solid fa-address-card mx-2" height="20" width="20"></i>
                         <label>Danh sách người dùng</label>
                     </a>
+                    <% } %>
                     <a href="Users.aspx" data-ajax="true" class="mb-4 site-bar-child rounded">
                         <i class="fa-solid fa-address-card mx-2" height="20" width="20"></i>
                         <label>Tài khoản</label>
                     </a>
-                    <a href="../Login.aspx" data-ajax="true" class="mb-4 site-bar-child rounded">
+                    <a href="javascript:void(0);" onclick="logout();" class="mb-4 site-bar-child rounded">
                         <i class="fa-solid fa-right-from-bracket mx-2" height="20" width="20"></i>
                         <label>Đăng xuất</label>
                     </a>
@@ -154,6 +156,11 @@
             // Load default page content
             loadPage('Room.aspx');
         });
+
+        function logout() {
+            document.cookie = "UserInfo=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+            window.location.href = '../LoginPage.aspx';
+        }
     </script>
 </body>
 </html>

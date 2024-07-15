@@ -8,6 +8,9 @@
                 <h3 class="text-center">Thông tin cá nhân</h3>
             </div>
         </div>
+    <asp:ScriptManager ID="ScriptManager4" runat="server"></asp:ScriptManager>
+    <asp:UpdatePanel ID="UpdatePanel4" runat="server">
+    <ContentTemplate>
         <div class="row">
             <div class="col-lg-6">
                 <img src="https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745" alt="" width ="250px"/>
@@ -17,27 +20,31 @@
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="fullname">Tên cán bộ</label>
-                            <input type="text" class="form-control" id="fullname">
+                            <input type="text" class="form-control" id="fullname" readonly runat="server">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="username">Tài khoản</label>
-                            <input type="text" class="form-control" id="username">
+                            <asp:TextBox ID="Uname" runat="server" CssClass="form-control" ReadOnly="True"></asp:TextBox>
+
                         </div>
                         <div class="form-group col-md-6">
                             <label for="oldPass">Mật khẩu cũ</label>
-                            <input type="text" class="form-control" id="oldPass">
+                            <asp:TextBox ID="oldPass" runat="server" CssClass="form-control" type="password"></asp:TextBox>
                         </div>
                         <div class="form-group col-md-6">
                             <label for="newPass">Mật khẩu mới</label>
-                            <input type="text" class="form-control" id="newPass">
+                            <asp:TextBox ID="newPass" runat="server" CssClass="form-control" type="password"></asp:TextBox>
+
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary">Cập nhật</button>
-                    <button type="submit" class="btn btn-warning">Sửa</button>
-                    <button type="submit" class="btn btn-danger">Xóa</button>
+                         <asp:Button Text="Cập nhật" runat="server" id="UpdateBtn" class="btn-primary btn-block btn" OnClick="UpdateBtn_Click" />
                 </div>
+                <asp:Label runat="server" ID="ErrMsg" class="text-danger" ></asp:Label>
             </div>
-        </div>     
+            
+        </div>  
+    </ContentTemplate>
+    </asp:UpdatePanel>
     </div>
 
 </asp:Content>

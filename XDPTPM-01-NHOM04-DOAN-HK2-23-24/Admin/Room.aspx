@@ -14,7 +14,7 @@
         <asp:UpdatePanel ID="UpdatePanel1" runat="server">
             <ContentTemplate>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-3 col-lg-3">
                         <div class="mb-4">
                             <asp:Label ID="lblResult" ForeColor="YellowGreen" runat="server"></asp:Label>
                         </div>
@@ -48,7 +48,7 @@
                             <asp:Label runat="server" ID="ErrMsg" class="text-danger"></asp:Label>
                         </div>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-9 col-lg-9">
                         <div class="mb-3">
                             <label for="txtSearchBook" class="form-label text-success">Tìm kiếm phòng</label>
                             <input type="text" placeholder="Nhập tên phòng ..." autocomplete="off" class="form-control" runat="server" id="txtSearchRoom" />

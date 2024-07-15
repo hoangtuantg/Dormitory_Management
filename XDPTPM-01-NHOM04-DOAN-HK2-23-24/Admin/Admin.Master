@@ -45,7 +45,7 @@
                         <label>Cơ sở vật chất</label>
                     </a>
 
-                    <a href="ApplicationList.aspx" data-ajax="true" class="mb-4 site-bar-child rounded">      
+                    <a href="Wish.aspx" data-ajax="true" class="mb-4 site-bar-child rounded">      
                         <i class="fa-solid fa-layer-group mx-2"></i>
                         <label>Danh sách đơn đăng ký</label>
                     </a>

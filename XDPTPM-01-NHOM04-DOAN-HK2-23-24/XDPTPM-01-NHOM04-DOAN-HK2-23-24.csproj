@@ -105,7 +105,7 @@
     <Content Include="About.aspx" />
     <Content Include="Admin\Admin.Master" />
     <Content Include="Admin\Infrastructure.aspx" />
-    <Content Include="Admin\ApplicationList.aspx" />
+    <Content Include="Admin\Wish.aspx" />
     <Content Include="Admin\Room.aspx" />
     <Content Include="Admin\StaffList.aspx" />
     <Content Include="Admin\StudentList.aspx" />
@@ -220,12 +220,12 @@
     <Compile Include="Admin\Infrastructure.aspx.designer.cs">
       <DependentUpon>Infrastructure.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\ApplicationList.aspx.cs">
-      <DependentUpon>ApplicationList.aspx</DependentUpon>
+    <Compile Include="Admin\Wish.aspx.cs">
+      <DependentUpon>Wish.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\ApplicationList.aspx.designer.cs">
-      <DependentUpon>ApplicationList.aspx</DependentUpon>
+    <Compile Include="Admin\Wish.aspx.designer.cs">
+      <DependentUpon>Wish.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Room.aspx.cs">
       <DependentUpon>Room.aspx</DependentUpon>

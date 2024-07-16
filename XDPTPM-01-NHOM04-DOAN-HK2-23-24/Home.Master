@@ -22,7 +22,7 @@
                 <li><a href="WishPage.aspx">Nguyện vọng</a></li>
                 <li><a href="/">Các Loại Phòng</a>
                 </li>
-                <li><a href="/">Tra Cứu Hồ Sơ</a></li>
+                <li><a href="SearchPage.aspx">Tra Cứu Hồ Sơ</a></li>
                 <li><a href="/">Sơ Đồ Phòng</a></li>
                 <li><a href="Contact.aspx">Liên Hệ</a></li>
             </ul>
@@ -30,8 +30,7 @@
         </header>
         <div>
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
- 
-
+                <h2>Tra cứu trạng thái đơn đăng ký của bạn</h2>
             </asp:ContentPlaceHolder>
         </div>
         <footer>

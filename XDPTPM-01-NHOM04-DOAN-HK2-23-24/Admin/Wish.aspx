@@ -38,7 +38,7 @@
                             <asp:Label ID="lblResult" ForeColor="YellowGreen" runat="server"></asp:Label>
                         </div>
                         <asp:GridView ID="WishList" runat="server" AutoGenerateColumns="false" CssClass="table" AutoGenerateSelectButton="False" AllowPaging="True" PageSize="10" 
-                            DataKeyNames="wishId" OnRowDataBound="WishList_RowDataBound" OnRowEditing="WishList_RowEditing" OnSelectedIndexChanged="WishList_SelectedIndexChanged" OnRowCancelingEdit="WishList_RowCancelingEdit" style="font-size: 14px">
+                            DataKeyNames="wishId" OnRowUpdating="WishList_RowUpdating" OnRowDataBound="WishList_RowDataBound" OnRowEditing="WishList_RowEditing" OnSelectedIndexChanged="WishList_SelectedIndexChanged" OnRowCancelingEdit="WishList_RowCancelingEdit" style="font-size: 14px">
                             <EditRowStyle BackColor="#C5BBAF" Font-Bold="true" ForeColor="#333333" />
                             <Columns>
                                 <asp:BoundField HeaderText="Họ tên sinh viên" DataField="studentName" ReadOnly="true" ItemStyle-HorizontalAlign="center"></asp:BoundField>

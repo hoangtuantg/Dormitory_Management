@@ -7,26 +7,39 @@
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-    <link href="styles/HomePage.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="styles/Style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <form id="form1" runat="server">
         <header>
-        <img src="datas/images/bannerHomePage.png" alt="ảnh bìa" style="text-align:center">
-        <div class="login-text">
-            <a href="LoginPage.aspx">Đăng nhập</a>
-        </div>
-        <nav class="menu-bar menu-bar-container">
-            <ul>
-                <li><a href="HomePage.aspx">Trang Chủ</a></li>
-                <li><a href="WishPage.aspx">Nguyện vọng</a></li>
-                <li><a href="/">Các Loại Phòng</a>
-                </li>
-                <li><a href="SearchPage.aspx">Tra Cứu Hồ Sơ</a></li>
-                <li><a href="/">Sơ Đồ Phòng</a></li>
-                <li><a href="Contact.aspx">Liên Hệ</a></li>
-            </ul>
-        </nav>
+            <img src="datas/images/bannerHomePage.png" alt="logo" class="logo">
+            <div class="login-text">
+                <a href="LoginPage.aspx">Đăng nhập</a>
+            </div>
+            <nav class="nav" id="nav-menu">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a class="nav_link" href="HomePage.aspx">Trang Chủ</a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_link" href="WishPage.aspx">Nguyện vọng</a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_link" href="SearchPage.aspx">Tra Cứu Hồ Sơ</a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_link" href="/">Sơ Đồ Phòng</a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_link" href="Contact.aspx">Liên Hệ</a>
+                    </li>
+                </ul>
+                <div class="nav_toggle" id="nav-toggle">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </nav>
         </header>
         <div>
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
@@ -34,8 +47,17 @@
             </asp:ContentPlaceHolder>
         </div>
         <footer>
+            <div class="content-icon-container">
+                <img src="./datas/images/Facebook.jpg" alt="Icon 1" class="contact_icon">
+                <img src="./datas/images/YouTube.jpg" alt="Icon 2" class="contact_icon">
+                <img src="./datas/images/Instagram.jpg" alt="Icon 3" class="contact_icon">
+                <img src="./datas/images/Google.jpg" alt="Icon 4" class="contact_icon">
+                <img src="./datas/images/Map.jpg" alt="Icon 4" class="contact_icon">
+            </div>
             <p>&copy; 2024 Ký túc xá Học viện Nông nghiệp Việt Nam. All rights reserved.</p>
         </footer>
     </form>
+
+    <script src="Scripts/WebForms/Main.js"></script>
 </body>
 </html>

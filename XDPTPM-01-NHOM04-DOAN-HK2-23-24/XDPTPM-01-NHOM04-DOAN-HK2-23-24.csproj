@@ -131,6 +131,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="datas\images\bannerHomePage.png" />
     <Content Include="datas\images\bannerAdminPage.jpg" />
+    <Content Include="datas\images\bannerContact.png" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
@@ -164,10 +165,12 @@
     <Content Include="Content\bootstrap-grid.rtl.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Scripts\WebForms\Main.js" />
     <Content Include="Scripts\WebForms\HomePage.js" />
     <Content Include="SearchPage.aspx" />
     <Content Include="styles\admin\Admin.css" />
     <Content Include="styles\Contact.css" />
+    <Content Include="styles\Style.css" />
     <Content Include="styles\SearchPage.css" />
     <Content Include="styles\WishPage.css" />
     <Content Include="WishPage.aspx" />

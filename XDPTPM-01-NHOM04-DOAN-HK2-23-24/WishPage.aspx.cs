@@ -40,12 +40,12 @@ namespace XDPTPM_01_NHOM04_DOAN_HK2_23_24
             {
                 {
                     
-                    string Studentcode = studentCode.Value;
-                    string NumIdentify = numIdentify.Value;
-                    string Studentname = studentName.Value;
-                    string Major = major.Value;
-                    string Class_ = Class.Value;
-                    string Reason = reason.Value;
+                    string Studentcode = studentCode.Value.Trim();
+                    string NumIdentify = numIdentify.Value.Trim();
+                    string Studentname = studentName.Value.Trim();
+                    string Major = major.Value.Trim();
+                    string Class_ = Class.Value.Trim();
+                    string Reason = reason.Value.Trim();
 
                     string Query = null;
                     if (Studentcode == "")

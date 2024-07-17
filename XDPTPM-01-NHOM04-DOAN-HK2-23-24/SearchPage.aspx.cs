@@ -46,7 +46,7 @@ namespace XDPTPM_01_NHOM04_DOAN_HK2_23_24
                     DataRow row = dataSet.Tables[0].Rows[0];
                     lblName.Text = row["studentName"].ToString(); // Giả sử cột tên là "Name"
                     lblIDNumber.Text = row["numIdentify"].ToString(); // Cột số căn cước
-
+                    pnDescription.Visible = false;
                     if (row["status"].ToString().Equals("accept"))
                     {
                         row["status"] = "Đã duyệt";
@@ -54,6 +54,9 @@ namespace XDPTPM_01_NHOM04_DOAN_HK2_23_24
                     else if (row["status"].ToString().Equals("refuse"))
                     {
                         row["status"] = "Từ chối";
+                        lblDescription.Text = row["description"].ToString();
+                        pnDescription.Visible = true;
+
                     }
                     else
                     {

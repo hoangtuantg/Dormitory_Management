@@ -20,6 +20,9 @@
                 <p><strong style="font-size: 14px">Số căn cước:</strong> <asp:Label ID="lblIDNumber" Font-Size="15px" runat="server"></asp:Label></p>
                 <p><strong style="font-size: 14px">Trạng thái:</strong> <asp:Label ID="lblStatus" Font-Size="15px" runat="server"></asp:Label></p>
             </asp:Panel>
+                <asp:Panel ID="pnDescription" runat="server" CssClass="user-info" Visible="false">
+                <p><strong style="font-size: 14px">Lý do:</strong> <asp:Label ID="lblDescription" Font-Size="15px" runat="server"></asp:Label></p>
+            </asp:Panel>
 
             <div class="instructions" style="margin-top: 40px">
                 <h5>Hướng dẫn:</h5>

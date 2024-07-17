@@ -85,7 +85,7 @@ img {
 
 .nav_link {
     color: white;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .nav_toggle {
@@ -133,6 +133,7 @@ content-icon-container {
 
     .nav_toggle {
         display: block;
+        margin-right: 12px;
     }
 
     .show_menu .nav_item {

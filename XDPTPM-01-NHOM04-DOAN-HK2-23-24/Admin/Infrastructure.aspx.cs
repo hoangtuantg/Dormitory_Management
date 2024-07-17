@@ -56,11 +56,11 @@ namespace XDPTPM_01_NHOM04_DOAN_HK2_23_24.Admin
         protected void InfrastructureLists_SelectedIndexChanged(object sender, EventArgs e)
         {
             infrastructure.Value = HttpUtility.HtmlDecode(InfrastructureLists.SelectedRow.Cells[0].Text);
-            string RoomName = HttpUtility.HtmlDecode(InfrastructureLists.SelectedRow.Cells[8].Text);
-            IWardrobe.Value = HttpUtility.HtmlDecode(InfrastructureLists.SelectedRow.Cells[2].Text);
-            IAircondition.Value = HttpUtility.HtmlDecode(InfrastructureLists.SelectedRow.Cells[3].Text);
-            IBed.Value = HttpUtility.HtmlDecode(InfrastructureLists.SelectedRow.Cells[4].Text);
-            IAcreage.Value = HttpUtility.HtmlDecode(InfrastructureLists.SelectedRow.Cells[5].Text);
+            string RoomName = HttpUtility.HtmlDecode(InfrastructureLists.SelectedRow.Cells[2].Text);
+            IWardrobe.Value = HttpUtility.HtmlDecode(InfrastructureLists.SelectedRow.Cells[3].Text);
+            IAircondition.Value = HttpUtility.HtmlDecode(InfrastructureLists.SelectedRow.Cells[4].Text);
+            IBed.Value = HttpUtility.HtmlDecode(InfrastructureLists.SelectedRow.Cells[5].Text);
+            IAcreage.Value = HttpUtility.HtmlDecode(InfrastructureLists.SelectedRow.Cells[6].Text);
 
             int roomId = -1;
             if (roomName.SelectedValue == "")
@@ -300,6 +300,12 @@ namespace XDPTPM_01_NHOM04_DOAN_HK2_23_24.Admin
             {
                 ErrMsg.Text = "Lỗi khi cập nhật: " + Ex.Message;
             }
+        }
+
+        protected void ExitSearchBtn_Click(object sender, EventArgs e)
+        {
+            ShowInfrastructure();
+            txtSearchRoomName.Value = "";
         }
     }
 }

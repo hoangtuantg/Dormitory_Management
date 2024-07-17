@@ -66,21 +66,25 @@
                             <label for="txtSearchRoomName" class="form-label text-success">Tìm kiếm phòng</label>
                             <input type="text" placeholder="Nhập tên phòng ..." autocomplete="off" class="form-control" runat="server" id="txtSearchRoomName" />
                         </div>
+                    <div class="d-flex justify-content-between">
+                        <asp:Button Text="Tìm kiếm" runat="server" ID="SearchRoomNameBtn" class="btn-outline-info btn-block btn" Width="100px" OnClick="SearchRoomNameBtn_Click" />                      
+                        <asp:Button ID="ExitSearchBtn" runat="server" class="btn-outline-info btn-block btn" OnClick="ExitSearchBtn_Click" Text="Hủy tìm" Width="100" />
+                    </div>
+                    <br />
 
-                        <asp:Button Text="Tìm kiếm" runat="server" ID="SearchRoomNameBtn" class="btn-outline-info btn-block btn" Width="100px" OnClick="SearchRoomNameBtn_Click" /></br>
 
         <asp:GridView ID="InfrastructureLists" runat="server" AutoGenerateColumns="false" class="table table-bordered" AutoGenerateSelectButton="false" AllowPaging="True" PageSize="5" OnPageIndexChanging="InfrastructureLists_PageIndexChanging" OnSelectedIndexChanged="InfrastructureLists_SelectedIndexChanged">
             <SelectedRowStyle BackColor="#C5BBAF" Font-Bold="true" ForeColor="#333333" />
             <Columns>
                 <asp:ButtonField CommandName="Select" Text="Chọn" ItemStyle-HorizontalAlign="Center" />
-                <asp:BoundField DataField="infrastructureID" HeaderText="Mã CSVC" />
+                <asp:BoundField DataField="infrastructureID" HeaderText="ID" />
+                <asp:BoundField DataField="roomName" HeaderText="Tên Phòng" />
                 <asp:BoundField DataField="wardrobe_quantity" HeaderText="Số lượng tủ quần áo" />
                 <asp:BoundField DataField="aircondition_quantity" HeaderText="Số lượng điều hòa" />
                 <asp:BoundField DataField="bed_quantity" HeaderText="Số lượng giường" />
                 <asp:BoundField DataField="room_acreage" HeaderText="Diện tích phòng(m2)" />
                 <asp:BoundField DataField="createAt" HeaderText="Ngày thêm" DataFormatString="{0:dd/MM/yyyy}" />
-                <asp:BoundField DataField="updateAt" HeaderText="Ngày cập nhật" DataFormatString="{0:dd/MM/yyyy}" />
-                <asp:BoundField DataField="roomName" HeaderText="Tên Phòng" />
+                <asp:BoundField DataField="updateAt" HeaderText="Ngày cập nhật" DataFormatString="{0:dd/MM/yyyy}" />                
             </Columns>
         </asp:GridView>
                     </div>

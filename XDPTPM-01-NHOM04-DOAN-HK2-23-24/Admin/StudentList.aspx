@@ -64,28 +64,31 @@
                     <asp:Label runat="server" ID="ErrMsg" class="text-danger"></asp:Label>
                 </div>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-9 col-lg-9">
                 <div class="mb-3">
                     <label for="txtSearchStudent" class="form-label text-success">Tìm kiếm sinh viên</label>
-                    <input type="text" placeholder="Tìm kiếm sinh viên ..." autocomplete="off" class="form-control" runat="server" id="txtSearchStudent" />
+                    <input type="text" placeholder="Nhập tên sinh viên, CCCD hoặc mã sinh viên ..." autocomplete="off" class="form-control" runat="server" id="txtSearchStudent" />
                 </div>
-
-                <asp:Button Text="Tìm kiếm" runat="server" ID="SearchStudentBtn"  class="btn-outline-info btn-block btn" width="100px" OnClick="SearchStudentBtn_Click"/> </br>
-
-                <asp:GridView ID="StudentLists" runat="server" AutoGenerateColumns="false" class="table table-bordered" AutoGenerateSelectButton="false"  AllowPaging="True" PageSize="3"  OnPageIndexChanging="StudentLists_PageIndexChanging" OnSelectedIndexChanged="StudentLists_SelectedIndexChanged">
-                    <SelectedRowStyle BackColor="#C5BBAF" Font-Bold="true" ForeColor="#333333"/>
+                <div class="d-flex justify-content-between">
+                     <asp:Button Text="Tìm kiếm" runat="server" ID="SearchStudentBtn"  class="btn-outline-info btn-block btn" width="100px" OnClick="SearchStudentBtn_Click"/> 
+                     <asp:Button ID="ExitSearchStudentBtn" runat="server" class="btn-outline-info btn-block btn" OnClick="ExitSearchStudentBtn_Click" Text="Hủy tìm" Width="100" />
+                </div>
+                <br />
+                <asp:GridView ID="StudentLists" runat="server" AllowPaging="True" AutoGenerateColumns="false" AutoGenerateSelectButton="false" class="table table-bordered" OnPageIndexChanging="StudentLists_PageIndexChanging" OnSelectedIndexChanged="StudentLists_SelectedIndexChanged" PageSize="3">
+                    <SelectedRowStyle BackColor="#C5BBAF" Font-Bold="true" ForeColor="#333333" />
                     <Columns>
-                        <asp:ButtonField CommandName="Select" Text="Chọn" ItemStyle-HorizontalAlign="Center" />
+                        <asp:ButtonField CommandName="Select" ItemStyle-HorizontalAlign="Center" Text="Chọn" />
                         <asp:BoundField DataField="studentID" HeaderText="ID" />
                         <asp:BoundField DataField="studentName" HeaderText="Tên SV" />
-                        <asp:BoundField DataField="createAt" HeaderText="Ngày thêm" DataFormatString="{0:dd/MM/yyyy}"/>
+                        <asp:BoundField DataField="createAt" DataFormatString="{0:dd/MM/yyyy}" HeaderText="Ngày thêm" />
                         <asp:BoundField DataField="gender" HeaderText="Giới tính" />
                         <asp:BoundField DataField="StudentCode" HeaderText="MSV" />
-                        <asp:BoundField DataField="numIdentify" HeaderText="CCCD"/>
-                        <asp:BoundField DataField="dateOfBirth" HeaderText="Ngày sinh" DataFormatString="{0:dd/MM/yyyy}" />
+                        <asp:BoundField DataField="numIdentify" HeaderText="CCCD" />
+                        <asp:BoundField DataField="dateOfBirth" DataFormatString="{0:dd/MM/yyyy}" HeaderText="Ngày sinh" />
                         <asp:BoundField DataField="roomName" HeaderText="Phòng" />
                     </Columns>
                 </asp:GridView>
+                </br>
             </div>
         </div>
         </ContentTemplate>

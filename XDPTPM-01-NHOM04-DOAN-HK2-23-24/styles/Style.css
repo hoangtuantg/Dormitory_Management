@@ -1,0 +1,152 @@
+﻿/*RESET CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.grid {
+    display: grid;
+    gap: 20px;
+}
+
+/*HEADER*/
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login-text {
+    position:fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    color: green;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.nav {
+    height: auto;
+    justify-content: space-between;
+    background-color: green;
+}
+
+.nav_list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav_item {
+    padding: 12px;
+}
+
+.nav_item:hover{
+    background-color: forestgreen;
+}
+
+.nav_link {
+    color: white;
+    font-size: 20px;
+}
+
+.nav_toggle {
+    display: none;
+    padding: 12px;
+    cursor: pointer;
+    color: white;
+}
+
+/*FOOTER*/
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: green;
+}
+
+content-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.contact_icon{
+    width: 2rem;
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width: 767.98px) {
+    .nav {
+        display: flex;
+    }
+
+    .nav_list {
+        display: block;
+    }
+
+    .nav_item:not(:first-child) {
+        display: none;
+    }
+
+    .nav_toggle {
+        display: block;
+    }
+
+    .show_menu .nav_item {
+        display: block;
+    }
+
+    .show_menu {
+        position: relative;
+        display: block;
+    }
+
+        .show_menu .nav_toggle {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+}

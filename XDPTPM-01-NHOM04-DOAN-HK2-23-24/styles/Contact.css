@@ -1,71 +1,39 @@
-﻿body {
+﻿.bannerImg{
+    width: 100%;
+    height: 100%;
 }
 
-.container {
-    margin-left: 1rem;
-    margin-right: 1rem;
+.page_title {
+    margin-bottom: 1.5rem;
 }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
 .content {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact_title{
+    margin: .5rem 0;
+}
+
+.address{
+    margin-top: .5rem;
+    display: flex;
+}
+
+.address_icon {
+    font-size: 2rem;
+    margin-right: .5rem;
 }
 
 .ggMap {
     width: 100%;
-    height: 450px;
-}
-
-.form-group {
-    margin-bottom: 1rem;
-}
-
-.form-control {
-    display: block;
-    width: 100%;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    border: 1px solid #ced4da;
-    border-radius: .375rem;
-}
-
-.btn {
-    display: inline-block;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #fff;
-    text-align: center;
-    text-decoration: none;
-    vertical-align: middle;
-    cursor: pointer;
-    border: none;
-    border-radius: .375rem;
-}
-
-.btn-success {
-    background-color: forestgreen;
+    height: 100%;
 }
 
 @media (min-width: 576px) {
-    .col-5 {
-        flex: 0 0 auto;
-        width: 41.66666667%;
-        padding-left: 1rem;
-        padding-right: 1rem;
+    .content {
+        grid-template-columns: auto 40%;
     }
 }
-.row content-icon-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-top: 50px;
-}
+

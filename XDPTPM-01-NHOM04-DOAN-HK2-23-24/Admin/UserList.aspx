@@ -67,15 +67,17 @@
                 <asp:Label runat="server" ID="ErrMsg" class="text-danger"></asp:Label>
             </div>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-9 col-lg-9">
             <div class="mb-3">
                 <label for="txtSearchUser" class="form-label text-success">Tìm kiếm người dùng</label>
-                <input type="text" placeholder="Tìm kiếm người dùng ..." autocomplete="off" class="form-control" runat="server" id="txtSearchUser" />
+                <input type="text" placeholder="Nhập tên cán bộ ..." autocomplete="off" class="form-control" runat="server" id="txtSearchUser" />
             </div>
-
-            <asp:Button Text="Tìm kiếm" runat="server" ID="SearchUserBtn"  class="btn-outline-info btn-block btn" width="100px" OnClick="SearchUserBtn_Click"/> 
-            
-            <br>
+            <div class="d-flex justify-content-between">
+                <asp:Button Text="Tìm kiếm" runat="server" ID="SearchUserBtn"  class="btn-outline-info btn-block btn" width="100px" OnClick="SearchUserBtn_Click"/> 
+                <asp:Button ID="ExitSearchUserBtn" runat="server" class="btn-outline-info btn-block btn" Text="Hủy tìm" Width="100" OnClick="ExitSearchUserBtn_Click" />
+            </div>
+            <br />
+        
             <asp:GridView ID="UsersList" runat="server" AllowPaging="True" AutoGenerateColumns="false" AutoGenerateSelectButton="false" class="table table-bordered" PageSize="4" OnSelectedIndexChanged="UsersList_SelectedIndexChanged1"  OnPageIndexChanging="UsersList_PageIndexChanging">
                 <SelectedRowStyle BackColor="#C5BBAF" Font-Bold="true" ForeColor="#333333" />
                 <Columns>

@@ -281,5 +281,11 @@ namespace XDPTPM_01_NHOM04_DOAN_HK2_23_24.Admin
                 ErrMsg.Text = "Lỗi khi cập nhật: " + Ex.Message;
             }
         }
+
+        protected void ExitSearchUserBtn_Click(object sender, EventArgs e)
+        {
+            ShowUsers();
+            txtSearchUser.Value = "";
+        }
     }
 }

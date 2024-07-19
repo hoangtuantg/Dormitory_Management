@@ -110,12 +110,6 @@ title body {
     object-position: bottom;
 }
 
-@media only screen and (max-width: 300px) {
-    .prev, .next, .text {
-        font-size: 11px
-    }
-}
-
 post {
     display: flex;
     justify-content: flex-end; 
@@ -149,17 +143,18 @@ post {
     display: none;
 }
 /* Định dạng phần title */
-.title {
+.page_title {
+    margin-top: 2rem;
     width: 100%;
     text-align: center;
 }
 
-    .title h1 {
+    .page_title h1 {
         font-size: 2.5em;
         margin-bottom: 10px;
     }
 
-    .title p {
+    .page_title p {
         font-size: 1.2em;
         color: #777;
     }
@@ -200,3 +195,9 @@ post {
         color: #555;
         margin-top: 10px;
     }
+
+@media only screen and (max-width: 300px) {
+    .prev, .next, .text {
+        font-size: 11px
+    }
+}

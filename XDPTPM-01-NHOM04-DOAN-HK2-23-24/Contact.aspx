@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Contact" Language="C#" MasterPageFile="~/Home.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="XDPTPM_01_NHOM04_DOAN_HK2_23_24.Contact" %>
+﻿<%@ Page Title="Liên lạc" Language="C#" MasterPageFile="~/Home.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="XDPTPM_01_NHOM04_DOAN_HK2_23_24.Contact" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">    
     <link href="styles/Contact.css" rel="stylesheet" />

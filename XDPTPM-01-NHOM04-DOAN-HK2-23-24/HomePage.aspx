@@ -78,11 +78,9 @@
                 </div>
             </div>
         </section>
-            <div>
-                .
-            </div>
+
             <div class="conter">
-    <div clas="title">
+    <div class="page_title">
         <h1>Ký túc xá Học viện Nông nghiệp Việt Nam</h1>
         <p>Tác giả: THM</p>
     </div>
@@ -115,9 +113,8 @@
             </div>
             <div>
                 <h2>Liên hệ</h2>
-                <p>Để biết thêm thông tin chi tiết về ký túc xá Học viện Nông nghiệp Việt Nam, vui lòng liên hệ theo thông tin bên dưới:</p>
-                <p>Email: @vnua.edu.vn</p>
-                <p>Điện thoại: 0886170831</p>
+                <p>Để biết thêm thông tin chi tiết về ký túc xá Học viện Nông nghiệp Việt Nam, bạn có thể liên hệ theo thông tin:</p>
+                <a href="Contact.aspx">Tại đây</a>
             </div>
     </section>
             </div>

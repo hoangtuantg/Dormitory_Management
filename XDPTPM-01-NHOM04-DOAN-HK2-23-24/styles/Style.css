@@ -45,6 +45,7 @@ img {
     top: 0;
     left: 0;
     z-index: 100;
+    background-color: none;
 }
 
 .logo {
@@ -97,26 +98,49 @@ img {
 
 /*FOOTER*/
 footer {
-    background-color: #003366;
     color: white;
-    text-align: center;
-    padding: 10px;
+    padding: 10px 10%;
     margin-top: 20px;
     background-color: green;
 }
 
-content-icon-container {
+.social {
     display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 10px;
-    margin-top: 50px;
 }
 
-.contact_icon{
-    width: 2rem;
+.title_social{
+    margin-bottom: 10px;
 }
 
+.social_item{
+    padding: 10px;
+}
+
+.facebook {
+    background-color: #4763A6;
+}
+
+.youtube {
+    background-color: #C92222;
+}
+
+.twitter {
+    background-color: #1BA2F3;
+}
+
+.ggplus {
+    background-color: #D74F39;
+}
+
+.social_icon {
+    color: white;
+    font-size: 1.1rem;
+}
+
+.copyright{
+    text-align: center;
+}
 /*RESPONSIVE*/
 @media screen and (max-width: 767.98px) {
     .nav {
@@ -150,4 +174,11 @@ content-icon-container {
             top: 0;
             right: 0;
         }
+}
+
+@media screen and (min-width: 767.98px) {
+    .related {
+        display: flex;
+        justify-content: space-between;
+    }
 }

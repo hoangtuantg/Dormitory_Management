@@ -133,6 +133,7 @@
     <Content Include="datas\images\bannerAdminPage.jpg" />
     <Content Include="datas\images\bannerContact.png" />
     <Content Include="Default.aspx" />
+    <Content Include="Diagram.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="HomePage.aspx" />
@@ -289,6 +290,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Diagram.aspx.cs">
+      <DependentUpon>Diagram.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Diagram.aspx.designer.cs">
+      <DependentUpon>Diagram.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

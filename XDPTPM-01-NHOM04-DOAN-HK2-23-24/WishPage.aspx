@@ -3,9 +3,9 @@
 <asp:Content ID="NguyenVong" ContentPlaceHolderID="MainContent" runat="server">
     <link href="styles/WishPage.css" rel="stylesheet" type="text/css" />
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <div class="container">
+    <main class="container">
         
-            <h2>Đăng Ký Nguyện Vọng Ở Ký Túc Xá</h2>
+            <h2 class="page_title">Đăng Ký Nguyện Vọng Ở Ký Túc Xá</h2>
             <div class="form-row">
                 <label for="ma_sv">
                     Mã Sinh Viên
@@ -40,7 +40,7 @@
                 <asp:Button ID="btnSubmit" runat="server" Text="Đăng ký" type="button" CssClass="btnsubmit" OnClick="btnSubmit_Click" />
             </div>
       
-    </div>
+    </main>
 </asp:Content>
 
 

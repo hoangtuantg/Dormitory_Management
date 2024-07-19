@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Home.Master" AutoEventWireup="true" CodeBehind="SearchPage.aspx.cs" Inherits="XDPTPM_01_NHOM04_DOAN_HK2_23_24.SearchPage" %>
+﻿<%@ Page Title="Tra cứu hồ sơ" Language="C#" MasterPageFile="~/Home.Master" AutoEventWireup="true" CodeBehind="SearchPage.aspx.cs" Inherits="XDPTPM_01_NHOM04_DOAN_HK2_23_24.SearchPage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
@@ -8,7 +8,7 @@
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
         <div class="container search-page" style="height: 65vh">
-            <h2 class="text-center">Tra cứu tình trạng đơn đăng ký ký túc xá</h2>
+            <h2 class="text-center page_title">Tra cứu tình trạng đơn đăng ký ký túc xá</h2>
             <div class="search-container m-4" style="margin-bottom: 50px; display: flex">
                 <input type="text" runat="server" id="txtSearchWish" placeholder="Nhập mã sinh viên hoặc số CCCD">
                 <asp:Button Text="Tra cứu" runat="server" CssClass="btn-search" OnClick="btnSearch_Click" style="padding: 5px 10px; margin-left: 10px; border-color: white; background-color: green; color: white; border-radius: 5px"/>

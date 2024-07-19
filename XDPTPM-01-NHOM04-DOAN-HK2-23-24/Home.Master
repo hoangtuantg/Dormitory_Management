@@ -32,7 +32,7 @@
                         <a class="nav_link" href="SearchPage.aspx">Tra Cứu Hồ Sơ</a>
                     </li>
                     <li class="nav_item">
-                        <a class="nav_link" href="/">Sơ Đồ Phòng</a>
+                        <a class="nav_link" href="Diagram.aspx">Sơ Đồ Phòng</a>
                     </li>
                     <li class="nav_item">
                         <a class="nav_link" href="Contact.aspx">Liên Hệ</a>
@@ -49,14 +49,52 @@
             </asp:ContentPlaceHolder>
         </div>
         <footer>
-            <div class="content-icon-container">
-                <img src="./datas/images/Facebook.jpg" alt="Icon 1" class="contact_icon">
-                <img src="./datas/images/YouTube.jpg" alt="Icon 2" class="contact_icon">
-                <img src="./datas/images/Instagram.jpg" alt="Icon 3" class="contact_icon">
-                <img src="./datas/images/Google.jpg" alt="Icon 4" class="contact_icon">
-                <img src="./datas/images/Map.jpg" alt="Icon 4" class="contact_icon">
+            <h2>VNUA - Học viện Nông nghiệp Việt Nam</h2>
+            <hr />
+            <div class="related">
+                <div>
+                    <div>
+                        <i class="fa fa-angle-double-right"></i>
+                        <a href="https://daotao.vnua.edu.vn">Tin tức</a>
+                    </div>
+                    <div>
+                        <i class="fa fa-angle-double-right"></i>
+                        <a href="Contact.aspx">Liên Hệ</a>
+                    </div>
+                    <div>
+                        <i class="fa fa-angle-double-right"></i>
+                        <a href="https://vnua.edu.vn">Về học viện</a>
+                    </div>
+                    <p>Địa chỉ: Trâu Qùy - Gia Lâm - Hà Nội</p>
+                </div>
+                <div>
+                    <h3 class="title_social">KẾT NỐI VỚI HỌC VIỆN</h3>
+                    <ul class="social">
+                        <li class="social_item facebook">
+                            <a href="#">
+                                <i class="fa fa-facebook-official social_icon"></i>
+                            </a>
+                        </li>
+                        <li class="social_item youtube">
+                            <a href="#">
+                                <i class="fa fa-youtube-play social_icon"></i>
+                            </a>
+                        </li>
+                        <li class="social_item twitter">
+                            <a href="#">
+                                <i class="fa fa-twitter social_icon"></i>
+                            </a>
+                        </li>
+                        <li class="social_item ggplus">
+                            <a href="#">
+                                <i class="fa fa-google-plus-official social_icon"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
             </div>
-            <p>&copy; 2024 Ký túc xá Học viện Nông nghiệp Việt Nam. All rights reserved.</p>
+            <p class="copyright">&copy; 2024 Ký túc xá Học viện Nông nghiệp Việt Nam. All rights reserved.</p>
         </footer>
     </form>
 

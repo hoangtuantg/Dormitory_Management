@@ -66,6 +66,11 @@
                                 <asp:BoundField HeaderText="Ngày thêm" ReadOnly="true" DataField="createAt" HeaderStyle-Height="25" ItemStyle-HorizontalAlign="center" SortExpression="roomId" DataFormatString="{0:dd/MM/yyyy}"></asp:BoundField>
                                 <asp:BoundField HeaderText="Sinh viên tối đa" DataField="maxStudent" HeaderStyle-Height="25" ItemStyle-HorizontalAlign="center" SortExpression="roomId"></asp:BoundField>
                                 <asp:BoundField HeaderText="Sinh viên hiện tại" ReadOnly=true DataField="currentStudent" HeaderStyle-Height="25" ItemStyle-HorizontalAlign="center" SortExpression="roomId"></asp:BoundField>
+                                <asp:TemplateField HeaderText="Tình trạng" ItemStyle-HorizontalAlign="Center">
+                                    <ItemTemplate>
+                                        <%# Convert.ToInt32(Eval("currentStudent")) == Convert.ToInt32(Eval("maxStudent")) ? "Đầy" : "Còn trống" %>
+                                    </ItemTemplate>
+                                </asp:TemplateField>
                                 <asp:BoundField HeaderText="Tòa" DataField="buildingName" HeaderStyle-Height="25" ItemStyle-HorizontalAlign="center" SortExpression="roomId"></asp:BoundField>
                                 <asp:TemplateField>
                                     <ItemTemplate>
